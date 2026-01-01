@@ -10,28 +10,65 @@
 
     For more details:
     * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
   -->
   <base href="/">
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
+  <meta name="description" content="Core System Axis">
 
   <!-- iOS meta tags & icons -->
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="webdemo">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <meta name="apple-mobile-web-app-title" content="CORYX">
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
+  <!-- Viewport (สำคัญมากสำหรับ mobile / landscape) -->
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
 
-  <title>webdemo</title>
+  <!-- Favicon (Browser tab) -->
+  <link rel="icon" type="image/png" href="icons/logo3.png"/>
+
+  <!-- Apple devices (iOS / Preview / LINE) -->
+  <link rel="apple-touch-icon" href="icons/logo6.png">
+
+  <title>CORYX</title>
   <link rel="manifest" href="manifest.json">
+
+  <!-- ============================= -->
+  <!-- 🔥 FIX WHITE GAP (PRODUCTION) -->
+  <!-- ============================= -->
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #0F172A; /* ต้องตรงกับ CustomColor.scaffoldBg */
+      overscroll-behavior: none;
+    }
+
+    /*
+      ป้องกัน iOS Safari gap ตอน landscape
+      และ address bar resize
+    */
+    body {
+      position: fixed;
+      inset: 0;
+      overflow: hidden;
+      touch-action: manipulation;
+    }
+
+    /* Flutter canvas ต้องเต็ม viewport */
+    #flutter_target,
+    flutter-view,
+    flt-glass-pane {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
 </head>
+
 <body>
   <script src="flutter_bootstrap.js" async></script>
 </body>
