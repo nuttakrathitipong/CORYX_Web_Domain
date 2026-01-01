@@ -48242,10 +48242,10 @@ s.l()
 this.I8()}}
 A.ahS.prototype={
 $1(a){var s=this.a,r=s.a.Q
-if(r==null){s=s.id
+s=s.id
 s===$&&A.a()
 s=s.c
-s=s==null?null:s.a3(a)}else s=r
+s=s==null?null:s.a3(a)
 return s===!0},
 $S:213}
 A.ahP.prototype={
@@ -74089,9 +74089,8 @@ giK(){var s=this.a.d
 return s},
 gnD(){var s=this.a.e
 return s===!0},
-gNB(){if(this.gnD()){var s=this.a.Q
-s=s===!0}else s=!1
-return s},
+gNB(){if(this.gnD())this.a.toString
+return!1},
 gmN(){var s=this.a.cy
 return s!==!1},
 aG(){var s,r,q,p,o,n,m=this,l=null
@@ -80198,7 +80197,8 @@ else{q=q.x
 s=q.y
 q=s==null?A.m(q).i("bt.T").a(s):s}if(q===!0){r=r.gG()
 if(r!=null)r.Q1()}},
-N(a){return new A.It(new A.agU(this,A.bA(a,null,t.w).w.a.a),null)},
+N(a){var s=A.bA(a,null,t.w).w.a
+return new A.It(new A.agU(this,Math.min(Math.abs(s.a),Math.abs(s.b))<600),null)},
 Hb(a){var s,r
 if(a===4){$.aqj().rg("open",["https://projdemo.streamlit.app/"])
 return}s=this.f[a]
@@ -80210,7 +80210,7 @@ $0(){var s=this.a
 s.w=s.w==="th"?"en":"th"},
 $S:0}
 A.agU.prototype={
-$2(a,b){var s,r,q,p,o,n,m,l=null,k=b.b,j=k>=600,i=this.a
+$2(a,b){var s,r,q,p,o,n,m,l=null,k=!this.b,j=k&&b.b>=600,i=this.a
 if(j!==i.r){i.r=j
 $.a0.k3$.push(new A.agQ(i))}s=i.e
 r=i.f
@@ -80225,10 +80225,11 @@ if(j)p.push(new A.IM(o,l))
 else p.push(new A.IN(o,l))
 o=r[1]
 q=A.b([A.c_(i.w==="th"?"\u0e2a\u0e32\u0e22\u0e18\u0e38\u0e23\u0e01\u0e34\u0e08":"Business Lines",l,l,l,B.k6,l,l),B.ME],q)
+k=k&&b.b>=800
 n=i.w
-if(k>=1200)q.push(new A.Iy(n,l))
+if(k)q.push(new A.Iy(n,l))
 else q.push(new A.Iz(n,l))
-p.push(A.eD(l,A.fz(q,B.a9,B.a4,B.a5),B.t,B.ls,l,l,l,o,l,B.CQ,this.b))
+p.push(A.eD(l,A.fz(q,B.a9,B.a4,B.a5),B.t,B.ls,l,l,l,o,l,B.CQ,1/0))
 p.push(B.MC)
 k=r[2]
 p.push(new A.JP(i.w,k))
@@ -80237,7 +80238,7 @@ p.push(new A.vV(i.w,r))
 p.push(B.Dj)
 m=new A.Ld(s,B.Ai,A.fz(p,B.a9,B.a4,B.a5),l)
 k=j?l:new A.Hh(new A.agT(i),i.w,l)
-s=j?A.atB(m,s,B.bp,!0,l,0,A.ET(),B.q,B.Kg,l,10,B.dO,!0,B.cj,!1):m
+s=j?A.atB(m,s,B.bp,!0,l,0,A.ET(),B.q,B.Kg,l,10,B.dO,!0,B.cj,l):m
 return A.atQ(B.bo,s,k,i.d)},
 $S:488}
 A.agQ.prototype={
