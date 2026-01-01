@@ -1400,7 +1400,7 @@ if(s==null)s=o}else s=null
 return new A.FC(n,q,s,A.cB(r.h(a,"hintText")))},
 apF(a,b,c){var s=c.a,r=c.b,q=Math.min(s,r)
 r=Math.max(s,r)
-return B.c.X(a,0,q)+b+B.c.cp(a,r)},
+return B.c.X(a,0,q)+b+B.c.co(a,r)},
 aFU(a1,a2,a3){var s,r,q,p,o,n,m,l,k,j,i,h=a3.a,g=a3.b,f=a3.c,e=a3.d,d=a3.e,c=a3.f,b=a3.r,a=a3.w,a0=new A.tk(h,g,f,e,d,c,b,a)
 d=a2==null
 c=d?null:a2.b
@@ -3716,8 +3716,8 @@ if(n instanceof RegExp)return n
 throw A.d(A.c1("Illegal RegExp pattern ("+String(n)+")",a,null))},
 axk(a,b,c){var s
 if(typeof b=="string")return a.indexOf(b,c)>=0
-else if(b instanceof A.r6){s=B.c.cp(a,c)
-return b.b.test(s)}else return!J.aAf(b,B.c.cp(a,c)).ga2(0)},
+else if(b instanceof A.r6){s=B.c.co(a,c)
+return b.b.test(s)}else return!J.aAf(b,B.c.co(a,c)).ga2(0)},
 aKF(a){if(a.indexOf("$",0)>=0)return a.replace(/\$/g,"$$$$")
 return a},
 amQ(a){if(/[[\]{}()*+?.\\^$|]/.test(a))return a.replace(/[[\]{}()*+?.\\^$|]/g,"\\$&")
@@ -3739,7 +3739,7 @@ if(o==null)o=r.a(o)
 n=o.b
 m=n.index
 p=p+A.n(A.aws(B.c.X(a,q,m)))+A.n(c.$1(o))
-q=m+n[0].length}s=p+A.n(A.aws(B.c.cp(a,q)))
+q=m+n[0].length}s=p+A.n(A.aws(B.c.co(a,q)))
 return s.charCodeAt(0)==0?s:s},
 aLG(a,b,c,d){var s=a.indexOf(b,d)
 if(s<0)return a
@@ -6484,7 +6484,7 @@ if(!b)s[0]=A.avt(s[0])
 return B.b.bM(s,"/")},
 avt(a){var s,r,q=a.length
 if(q>=2&&A.avu(a.charCodeAt(0)))for(s=1;s<q;++s){r=a.charCodeAt(s)
-if(r===58)return B.c.X(a,0,s)+"%3A"+B.c.cp(a,s+1)
+if(r===58)return B.c.X(a,0,s)+"%3A"+B.c.co(a,s+1)
 if(r>127||(u.S.charCodeAt(r)&8)===0)break}return a},
 aHX(a,b){if(a.ah6("package")&&a.c==null)return A.awr(b,0,b.length)
 return-1},
@@ -8988,7 +8988,7 @@ a7A:function a7A(){},
 Iw:function Iw(a,b,c){this.a=a
 this.b=b
 this.c=c},
-aC9(a){return new A.iw(a.gcm(a),A.bm(20,null,!1,t.av))},
+aC9(a){return new A.iw(a.gcl(a),A.bm(20,null,!1,t.av))},
 aCa(a){return a===1},
 aGt(a,b){var s=t.S
 return new A.h0(B.a3,B.d5,A.VH(),B.bT,A.A(s,t.GY),A.A(s,t.o),B.h,A.b([],t.t),A.A(s,t.E),A.cL(s),a,b,A.VI(),A.A(s,t.C))},
@@ -14234,11 +14234,11 @@ ar_(a,b,c,d){var s,r,q=$.aa().bo()
 q.saJ(0,c.a)
 if(c.b===0){q.sfe(0,B.bw)
 q.sm7(0)
-a.dW(d.cn(b),q)}else{s=d.cn(b)
+a.dW(d.cm(b),q)}else{s=d.cm(b)
 r=s.dr(-c.gdS())
 a.Ek(s.dr(c.gnG()),r,q)}},
 anm(a3,a4,a5,a6,a7,a8,a9,b0,b1,b2){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2
-switch(b0.a){case 0:s=(a5==null?B.aj:a5).cn(a4)
+switch(b0.a){case 0:s=(a5==null?B.aj:a5).cm(a4)
 break
 case 1:r=a4.c-a4.a
 s=A.m1(A.m3(a4.gb4(),a4.gfu()/2),new A.aA(r,r))
@@ -16111,7 +16111,7 @@ r=a5.b
 q=a4.gpG()
 p=a4.gj8(a4)
 o=a4.gbp()
-n=a4.gcm(a4)
+n=a4.gcl(a4)
 m=a4.giR(a4)
 l=a4.gbx(a4)
 k=a4.goN()
@@ -16135,7 +16135,7 @@ a2=A.a7(new A.aZ(new A.be(r,q),new A.a6h(s),p),!0,p.i("k.E"))
 p=a4.gpG()
 q=a4.gj8(a4)
 a1=a4.gbp()
-e=a4.gcm(a4)
+e=a4.gcl(a4)
 c=a4.giR(a4)
 b=a4.gbx(a4)
 a=a4.goN()
@@ -17939,7 +17939,7 @@ for(n=a.split("\n"+n+"\n"),s=n.length,r=0;r<s;++r){q=n[r]
 p=B.c.hO(q,"\n\n")
 o=p>=0
 if(o){B.c.X(q,0,p).split("\n")
-B.c.cp(q,p+2)
+B.c.co(q,p+2)
 m.push(new A.xx())}else m.push(new A.xx())}return m},
 aFk(a){var s
 $label0$0:{if("AppLifecycleState.resumed"===a){s=B.bX
@@ -20820,7 +20820,7 @@ q=r}else q=null
 p=q==null?a.mX(t.uK):q
 return p},
 aDV(a,b){var s,r,q,p,o,n,m=null,l=A.b([],t.ny)
-if(B.c.bc(b,"/")&&b.length>1){b=B.c.cp(b,1)
+if(B.c.bc(b,"/")&&b.length>1){b=B.c.co(b,1)
 s=t.z
 l.push(a.vA("/",!0,m,s))
 r=b.split("/")
@@ -21969,7 +21969,7 @@ s=$.Z.ac$.x.h(0,a).e
 s.toString
 s=t.ip.a(s).f
 s.toString
-return t.sm.a(s).RA(A.apB(a,b.gbx(b)),b.gcm(b))},
+return t.sm.a(s).RA(A.apB(a,b.gbx(b)),b.gcl(b))},
 aJe(a,b){var s,r,q
 if($.Z.ac$.x.h(0,a)==null)return!1
 s=$.Z.ac$.x.h(0,a).e
@@ -21978,7 +21978,7 @@ s=t.ip.a(s).f
 s.toString
 t.sm.a(s)
 r=A.apB(a,b.gbx(b))
-q=b.gcm(b)
+q=b.gcl(b)
 return s.agz(r,q)&&!s.RA(r,q)},
 rW:function rW(a,b){this.a=a
 this.b=b},
@@ -22417,7 +22417,7 @@ m=n.a
 l=m.a
 m=m.b
 k=A.cz("\\b"+A.amQ(B.c.X(b,l,m))+"\\b",!0,!1)
-j=B.c.hO(B.c.cp(a,o),k)
+j=B.c.hO(B.c.co(a,o),k)
 i=j+o
 h=l+p
 g=h===i
@@ -23304,7 +23304,7 @@ WM:function WM(){},
 WN:function WN(){},
 apG(a,b,c){var s
 if(!(a instanceof A.qi)){s=J.dz(a)
-if(B.c.bc(s,"TypeError: "))s=B.c.cp(s,11)
+if(B.c.bc(s,"TypeError: "))s=B.c.co(s,11)
 a=new A.qi(s,c.b)}A.as6(a,b)},
 EJ(a,b){return A.aJv(a,b)},
 aJv(a1,a2){var $async$EJ=A.P(function(a3,a4){switch(a3){case 2:n=q
@@ -23927,7 +23927,7 @@ am2:function am2(){},
 a2j:function a2j(){},
 Ju(a,b){var s,r,q,p,o,n=b.Uh(a)
 b.lG(a)
-if(n!=null)a=B.c.cp(a,n.length)
+if(n!=null)a=B.c.co(a,n.length)
 s=t.s
 r=A.b([],s)
 q=A.b([],s)
@@ -23936,7 +23936,7 @@ if(s!==0&&b.kx(a.charCodeAt(0))){q.push(a[0])
 p=1}else{q.push("")
 p=0}for(o=p;o<s;++o)if(b.kx(a.charCodeAt(o))){r.push(B.c.X(a,p,o))
 q.push(a[o])
-p=o+1}if(p<s){r.push(B.c.cp(a,p))
+p=o+1}if(p<s){r.push(B.c.co(a,p))
 q.push("")}return new A.a79(b,n,r,q)},
 a79:function a79(a,b,c,d){var _=this
 _.a=a
@@ -24253,8 +24253,8 @@ agS:function agS(a){this.a=a},
 agT:function agT(a){this.a=a},
 agP:function agP(a,b){this.a=a
 this.b=b},
-em(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9){return new A.JO(a8,a7,a1,a9,b,d,a5,g,l,a,c,e,a2,i,f,a4,h,j,r,a6,p,a0,n,k,o,a3)},
-JO:function JO(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,a0,a1,a2,a3,a4,a5,a6){var _=this
+em(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,a0,a1,a2,a3,a4,a5,a6,a7,a8){return new A.JO(a7,a6,a1,a8,b,d,a4,g,l,a,c,e,a2,i,f,a3,h,j,r,a5,p,a0,n,k,o)},
+JO:function JO(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,a0,a1,a2,a3,a4,a5){var _=this
 _.b=a
 _.c=b
 _.f=c
@@ -24279,8 +24279,7 @@ _.k2=a1
 _.k4=a2
 _.ok=a3
 _.p1=a4
-_.p3=a5
-_.p4=a6},
+_.p3=a5},
 vW:function vW(a,b){this.c=a
 this.a=b},
 NH:function NH(a,b,c,d,e){var _=this
@@ -32561,7 +32560,7 @@ return new A.te(c,a)},
 V(a,b){return a+b},
 lw(a,b){var s=b.length,r=a.length
 if(s>r)return!1
-return b===this.cp(a,r-s)},
+return b===this.co(a,r-s)},
 yA(a,b,c){A.atB(0,0,a.length,"startIndex")
 return A.aLG(a,b,c,0)},
 kI(a,b,c,d){var s=A.dU(b,c,a.length,null,null)
@@ -32573,7 +32572,7 @@ if(s>a.length)return!1
 return b===a.substring(c,s)},
 bc(a,b){return this.d0(a,b,0)},
 X(a,b,c){return a.substring(b,A.dU(b,c,a.length,null,null))},
-cp(a,b){return this.X(a,b,null)},
+co(a,b){return this.X(a,b,null)},
 pD(a){var s,r,q,p=a.trim(),o=p.length
 if(o===0)return p
 if(p.charCodeAt(0)===133){s=J.asH(p,1)
@@ -36720,7 +36719,7 @@ n!==$&&A.ap()
 n=o.w=s.charCodeAt(0)==0?s:s}return n},
 gtr(){var s,r,q=this,p=q.x
 if(p===$){s=q.e
-if(s.length!==0&&s.charCodeAt(0)===47)s=B.c.cp(s,1)
+if(s.length!==0&&s.charCodeAt(0)===47)s=B.c.co(s,1)
 r=s.length===0?B.e2:A.a36(new A.ai(A.b(s.split("/"),t.s),A.aKm(),t.Gf),t.N)
 q.x!==$&&A.ap()
 p=q.x=r}return p},
@@ -36775,7 +36774,7 @@ if(!n||o===3)if(a.charCodeAt(p+1)===46)n=!n||a.charCodeAt(p+2)===46
 else n=m
 else n=m
 if(n)break;--s
-q=p}return B.c.kI(a,q+1,null,B.c.cp(b,r-3*s))},
+q=p}return B.c.kI(a,q+1,null,B.c.co(b,r-3*s))},
 a3(a){return this.tD(A.hC(a))},
 tD(a){var s,r,q,p,o,n,m,l,k,j,i,h=this
 if(a.gfa().length!==0)return a
@@ -36788,7 +36787,7 @@ n=h.e
 if(a.gRs())m=a.gxs()?a.gpr(a):h.f
 else{l=A.aHX(h,n)
 if(l>0){k=B.c.X(n,0,l)
-n=a.gF_()?k+A.pP(a.gee(a)):k+A.pP(h.LX(B.c.cp(n,k.length),a.gee(a)))}else if(a.gF_())n=A.pP(a.gee(a))
+n=a.gF_()?k+A.pP(a.gee(a)):k+A.pP(h.LX(B.c.co(n,k.length),a.gee(a)))}else if(a.gF_())n=A.pP(a.gee(a))
 else if(n.length===0)if(p==null)n=s.length===0?a.gee(a):A.pP(a.gee(a))
 else n=A.pP("/"+a.gee(a))
 else{j=h.LX(n,a.gee(a))
@@ -36896,7 +36895,7 @@ gee(a){return B.c.X(this.a,this.e,this.f)},
 gpr(a){var s=this.f,r=this.r
 return s<r?B.c.X(this.a,s+1,r):""},
 gjy(){var s=this.r,r=this.a
-return s<r.length?B.c.cp(r,s+1):""},
+return s<r.length?B.c.co(r,s+1):""},
 gtr(){var s,r,q=this.e,p=this.f,o=this.a
 if(B.c.d0(o,"/",q))++q
 if(q===p)return B.e2
@@ -36933,7 +36932,7 @@ if(k&&!B.c.bc(l,"/"))l="/"+l
 k=h.r
 j=m<k?B.c.X(q,m+1,k):g
 m=h.r
-i=m<q.length?B.c.cp(q,m+1):g
+i=m<q.length?B.c.co(q,m+1):g
 return A.E2(b,p,n,o,l,j,i)},
 a3(a){return this.tD(A.hC(a))},
 tD(a){if(a instanceof A.hJ)return this.aa0(this,a)
@@ -36948,23 +36947,23 @@ if(q&&B.c.bc(a.a,"file"))p=b.e!==b.f
 else if(q&&B.c.bc(a.a,"http"))p=!b.LF("80")
 else p=!(r===5&&B.c.bc(a.a,"https"))||!b.LF("443")
 if(p){o=r+1
-return new A.hJ(B.c.X(a.a,0,o)+B.c.cp(b.a,c+1),r,s+o,b.d+o,b.e+o,b.f+o,b.r+o,a.w)}else return this.Oa().tD(b)}n=b.e
+return new A.hJ(B.c.X(a.a,0,o)+B.c.co(b.a,c+1),r,s+o,b.d+o,b.e+o,b.f+o,b.r+o,a.w)}else return this.Oa().tD(b)}n=b.e
 c=b.f
 if(n===c){s=b.r
 if(c<s){r=a.f
 o=r-c
-return new A.hJ(B.c.X(a.a,0,r)+B.c.cp(b.a,c),a.b,a.c,a.d,a.e,c+o,s+o,a.w)}c=b.a
+return new A.hJ(B.c.X(a.a,0,r)+B.c.co(b.a,c),a.b,a.c,a.d,a.e,c+o,s+o,a.w)}c=b.a
 if(s<c.length){r=a.r
-return new A.hJ(B.c.X(a.a,0,r)+B.c.cp(c,s),a.b,a.c,a.d,a.e,a.f,s+(r-s),a.w)}return a.ajD()}s=b.a
+return new A.hJ(B.c.X(a.a,0,r)+B.c.co(c,s),a.b,a.c,a.d,a.e,a.f,s+(r-s),a.w)}return a.ajD()}s=b.a
 if(B.c.d0(s,"/",n)){m=a.e
 l=A.avj(this)
 k=l>0?l:m
 o=k-n
-return new A.hJ(B.c.X(a.a,0,k)+B.c.cp(s,n),a.b,a.c,a.d,m,c+o,b.r+o,a.w)}j=a.e
+return new A.hJ(B.c.X(a.a,0,k)+B.c.co(s,n),a.b,a.c,a.d,m,c+o,b.r+o,a.w)}j=a.e
 i=a.f
 if(j===i&&a.c>0){for(;B.c.d0(s,"../",n);)n+=3
 o=j-n+1
-return new A.hJ(B.c.X(a.a,0,j)+"/"+B.c.cp(s,n),a.b,a.c,a.d,j,c+o,b.r+o,a.w)}h=a.a
+return new A.hJ(B.c.X(a.a,0,j)+"/"+B.c.co(s,n),a.b,a.c,a.d,j,c+o,b.r+o,a.w)}h=a.a
 l=A.avj(this)
 if(l>=0)g=l
 else for(g=j;B.c.d0(h,"../",g);)g+=3
@@ -36976,7 +36975,7 @@ if(h.charCodeAt(i)===47){if(f===0){d="/"
 break}--f
 d="/"}}if(i===g&&a.b<=0&&!B.c.d0(h,"/",j)){n-=f*3
 d=""}o=i-n+d.length
-return new A.hJ(B.c.X(h,0,i)+d+B.c.cp(s,n),a.b,a.c,a.d,j,c+o,b.r+o,a.w)},
+return new A.hJ(B.c.X(h,0,i)+d+B.c.co(s,n),a.b,a.c,a.d,j,c+o,b.r+o,a.w)},
 Gj(){var s,r=this,q=r.b
 if(q>=0){s=!(q===4&&B.c.bc(r.a,"file"))
 q=s}else q=!1
@@ -38689,7 +38688,7 @@ A.cv(self.window,"popstate",B.kT.GY(s),null)
 return new A.a17(this,s)},
 Ue(){var s=self.window.location.hash
 if(s.length===0||s==="#")return"/"
-return B.c.cp(s,1)},
+return B.c.co(s,1)},
 H0(a){return A.arN(self.window.history)},
 SH(a){var s,r=a.length===0||a==="/"?"":"#"+a,q=self.window.location.pathname
 if(q==null)q=null
@@ -38776,7 +38775,7 @@ ga9(a){return new A.zW(this.a,0,0)},
 gM(a){var s=this.a,r=s.length
 return r===0?A.af(A.M("No element")):B.c.X(s,0,new A.hV(s,r,0,240).hR())},
 gad(a){var s=this.a,r=s.length
-return r===0?A.af(A.M("No element")):B.c.cp(s,new A.ni(s,0,r,240).hR())},
+return r===0?A.af(A.M("No element")):B.c.co(s,new A.ni(s,0,r,240).hR())},
 gaH(a){var s=this.a,r=s.length
 if(r===0)throw A.d(A.M("No element"))
 if(new A.hV(s,r,0,240).hR()===r)return s
@@ -38816,7 +38815,7 @@ hZ(a,b){A.du(b,"count")
 return this.aa3(b)},
 aa3(a){var s=this.aa5(a,0,null),r=this.a
 if(s===r.length)return B.bM
-return new A.eb(B.c.cp(r,s))},
+return new A.eb(B.c.co(r,s))},
 jQ(a,b){var s=this.zB(0,b).xA(0)
 if(s.length===0)return B.bM
 return new A.eb(s)},
@@ -40787,7 +40786,7 @@ N(a){var s=null
 return new A.x9(this,A.Ib(this.d,A.arp(s,this.c.geJ(),s,s,s,s,s,s,s),s),s)}}
 A.x9.prototype={
 np(a,b,c){return new A.w4(this.w.c,c,null)},
-co(a){return!this.w.c.j(0,a.w.c)}}
+cn(a){return!this.w.c.j(0,a.w.c)}}
 A.qy.prototype={
 geJ(){var s=this.b
 return s==null?this.w.b:s},
@@ -40868,7 +40867,7 @@ p=s.length
 if(q>p){o=B.c.xC(r,s)
 if(o===q-p&&o>2&&B.c.X(r,o-2,o)===": "){n=B.c.X(r,0,o-2)
 m=B.c.hO(n," Failed assertion:")
-if(m>=0)n=B.c.X(n,0,m)+"\n"+B.c.cp(n,m+1)
+if(m>=0)n=B.c.X(n,0,m)+"\n"+B.c.co(n,m+1)
 l=B.c.yK(s)+"\n"+n}}}if(l==null)l=r}else if(!(typeof l=="string"))l=t.Lt.b(l)||t.VI.b(l)?J.dz(l):"  "+A.n(l)
 l=B.c.yK(l)
 return l.length===0?"  <no message available>":l},
@@ -41445,7 +41444,7 @@ gnc(){return this.w},
 gpG(){return this.a},
 gj8(a){return this.c},
 gbp(){return this.d},
-gcm(a){return this.e},
+gcl(a){return this.e},
 giR(a){return this.f},
 gbx(a){return this.r},
 goN(){return this.w},
@@ -41471,7 +41470,7 @@ A.MP.prototype={$ib7:1}
 A.TL.prototype={
 gj8(a){return this.gbN().c},
 gbp(){return this.gbN().d},
-gcm(a){return this.gbN().e},
+gcl(a){return this.gbN().e},
 giR(a){return this.gbN().f},
 gbx(a){return this.gbN().r},
 goN(){return this.gbN().w},
@@ -41732,7 +41731,7 @@ if(t.n2.b(a)||t.pY.b(a)){s=A.asg(a.gyn(),a.gtu(),a.gSJ(a))
 r.db=new A.dG(a.gcY(),a.gbx(a))
 r.dx=s
 if(r.dy===B.hy)if(s>0.4){r.dy=B.hz
-r.a3(B.bF)}else if(a.goN().grH()>A.n4(a.gcm(a),r.b))r.a3(B.ab)
+r.a3(B.bF)}else if(a.goN().grH()>A.n4(a.gcl(a),r.b))r.a3(B.ab)
 if(s>0.4&&r.dy===B.yl){r.dy=B.hz
 if(r.at!=null)r.cB("onStart",new A.a0l(r,s))}}r.zr(a)},
 hx(a){var s=this,r=s.dy
@@ -41841,7 +41840,7 @@ s.toString
 r.I7(s)
 r.a_X()},
 Rk(a){var s,r=this
-if(!a.gqa()){if(t.pY.b(a)){s=new A.iw(a.gcm(a),A.bm(20,null,!1,t.av))
+if(!a.gqa()){if(t.pY.b(a)){s=new A.iw(a.gcl(a),A.bm(20,null,!1,t.av))
 r.p=s
 s.wc(a.gj8(a),a.gcY())}if(t.n2.b(a)){s=r.p
 s.toString
@@ -42083,7 +42082,7 @@ s===$&&A.a()
 r=A.rA(j,null,k,n).gdV()
 i=h.qu(k)
 h.ok=s+r*J.fw(i==null?1:i)
-s=a.gcm(a)
+s=a.gcl(a)
 r=h.b
 if(h.F5(s,r==null?null:r.a)){h.p1=!0
 if(B.b.t(h.RG,a.gbp()))h.IX(a.gbp())
@@ -42367,15 +42366,15 @@ I(){return"MultitouchDragStrategy."+this.b}}
 A.cy.prototype={
 CU(a){},
 Pf(a){var s=this
-s.e.m(0,a.gbp(),a.gcm(a))
+s.e.m(0,a.gbp(),a.gcl(a))
 if(s.h8(a))s.hy(a)
 else s.p5(a)},
 hy(a){},
 p5(a){},
 h8(a){var s=this.c
-return(s==null||s.t(0,a.gcm(a)))&&this.d.$1(a.gdK(a))},
+return(s==null||s.t(0,a.gcl(a)))&&this.d.$1(a.gdK(a))},
 Fm(a){var s=this.c
-return s==null||s.t(0,a.gcm(a))},
+return s==null||s.t(0,a.gcl(a))},
 l(){},
 RV(a,b,c){var s,r,q,p,o,n=null
 try{n=b.$0()}catch(p){s=A.ak(p)
@@ -42536,7 +42535,7 @@ case 2:if(r.L!=null)r.cB("onSecondaryTapDown",new A.abZ(r,s))
 break
 case 4:break}},
 Rn(a,b){var s,r,q=this
-b.gcm(b)
+b.gcl(b)
 b.gbx(b)
 b.gcY()
 s=new A.tg()
@@ -42580,7 +42579,7 @@ A.A6.prototype={}
 A.A3.prototype={}
 A.DE.prototype={
 hL(a){var s,r,q=this
-if(t.n2.b(a)){s=A.n4(a.gcm(a),q.b)
+if(t.n2.b(a)){s=A.n4(a.gcl(a),q.b)
 r=q.x6$
 if(a.gbx(a).a_(0,r.b).gdV()>s){q.uL()
 q.rT$=q.rS$=null}}else if(t.oN.b(a)){q.oY$=a
@@ -42657,7 +42656,7 @@ r.fr=!1},
 hL(a){var s,r,q,p,o,n,m=this
 if(a.gbp()!==m.go)return
 m.YB(a)
-if(t.n2.b(a)){s=A.n4(a.gcm(a),m.b)
+if(t.n2.b(a)){s=A.n4(a.gcl(a),m.b)
 if(!m.fr){r=m.k4
 r===$&&A.a()
 r=a.gbx(a).a_(0,r.b).gdV()>s}else r=!0
@@ -42676,7 +42675,7 @@ m.p1=r+o*J.fw(n==null?1:n)
 r=m.p2
 r===$&&A.a()
 m.p2=r+A.rA(q,null,a.gnc(),a.gcY()).gdV()*B.i.gzm(1)
-if(!m.Ll(a.gcm(a)))r=m.fy&&Math.abs(m.p2)>A.apN(a.gcm(a),m.b)
+if(!m.Ll(a.gcl(a)))r=m.fy&&Math.abs(m.p2)>A.apN(a.gcl(a),m.b)
 else r=!0
 if(r){m.k3=a
 if(m.ch){m.k2=B.dt
@@ -42724,7 +42723,7 @@ if(o.CW!=null)o.cB("onTapDown",new A.WR(o,new A.A2(s,r,q,p)))
 o.fx=!0},
 J3(a){var s,r,q,p,o=this
 if(!o.fy)return
-s=a.gcm(a)
+s=a.gcl(a)
 r=a.gbx(a)
 q=a.gcY()
 p=o.jw$
@@ -44095,7 +44094,7 @@ if(l==null){l=r.x
 l.toString}}else l=B.t
 return A.cS(k,new A.fC(new A.ab(s,s,1/0,1/0),A.xL(B.aa,k,this.x,l,p,o,k,n,q,m,k,B.eh),k),!1,k,k,!0,k,k,k,i,k,k,!0,k,k,k,k,k,k,k,k,k,k,!0,k,k,k,k,k)}}
 A.Bu.prototype={
-co(a){return!this.f.nL(0,a.f)}}
+cn(a){return!this.f.nL(0,a.f)}}
 A.wq.prototype={
 aq(){var s=null,r=t.A
 return new A.qF(A.HH(!0,s,!1),new A.bw(s,r),new A.bw(s,r),s,s)}}
@@ -44822,7 +44821,7 @@ if(J.O(b)!==A.w(this))return!1
 return b instanceof A.qW&&J.e(b.a,this.a)}}
 A.x3.prototype={
 np(a,b,c){return A.asp(c,this.w)},
-co(a){return!this.w.j(0,a.w)}}
+cn(a){return!this.w.j(0,a.w)}}
 A.Ps.prototype={}
 A.xb.prototype={
 ga7v(){var s,r,q,p,o=this.e,n=o==null?null:o.gcb(o)
@@ -45049,7 +45048,7 @@ else b.ri(s)}b.mL(c,g,f)
 b.cu(0)}}
 A.r1.prototype={}
 A.Cu.prototype={
-co(a){return this.f!==a.f}}
+cn(a){return this.f!==a.f}}
 A.xd.prototype={
 Ug(a){return null},
 N(a){var s=this,r=a.av(t.sZ),q=r==null?null:r.f
@@ -45486,9 +45485,9 @@ hY(a,b){var s=$.aa().cf(),r=a.a,q=a.b
 s.k9(new A.u(r,q,r+(a.c-r),q+Math.max(0,a.d-q-this.a.b)))
 return s},
 ey(a,b){var s=$.aa().cf()
-s.eV(this.b.cn(a))
+s.eV(this.b.cm(a))
 return s},
-hT(a,b,c,d){a.dW(this.b.cn(b),c)},
+hT(a,b,c,d){a.dW(this.b.cm(b),c)},
 gfO(){return!0},
 cW(a,b){var s,r
 if(a instanceof A.it){s=A.aO(a.a,this.a,b)
@@ -45538,14 +45537,14 @@ s.toString
 r=A.aO(this.a,a.a,b)
 return new A.fT(a.b,s,r)}return this.uw(a,b)},
 hY(a,b){var s=$.aa().cf()
-s.eV(this.c.cn(a).dr(-this.a.b))
+s.eV(this.c.cm(a).dr(-this.a.b))
 return s},
 ey(a,b){var s=$.aa().cf()
-s.eV(this.c.cn(a))
+s.eV(this.c.cm(a))
 return s},
-hT(a,b,c,d){a.dW(this.c.cn(b),c)},
+hT(a,b,c,d){a.dW(this.c.cm(b),c)},
 gfO(){return!0},
-yf(b0,b1,b2,b3,b4,b5){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7=this.a,a8=a7.hb(),a9=this.c.cn(b1)
+yf(b0,b1,b2,b3,b4,b5){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7=this.a,a8=a7.hb(),a9=this.c.cm(b1)
 a7=a7.b/2
 s=a9.dr(-a7)
 if(b4==null||b2<=0||b3===0)b0.dW(s,a8)
@@ -47093,7 +47092,7 @@ gDT(a){return this.w},
 np(a,b,c){var s=null,r=this.w,q=r.a,p=r.b,o=r.c,n=r.d,m=r.e,l=r.f,k=r.y,j=r.z,i=r.Q,h=r.ch,g=r.as,f=r.at
 r=r.ax
 return A.asU(c,A.aog(k,s,q,h,g,m,s,r,s,f,s,n,i,p,o,s,l,j,s,s,s),s)},
-co(a){return!this.gDT(0).j(0,a.gDT(0))}}
+cn(a){return!this.gDT(0).j(0,a.gDT(0))}}
 A.a32.prototype={
 $1(a){var s=A.asV(a)
 return A.asU(this.dy,A.aog(s.y,s.db,s.a,s.ch,s.as,s.e,s.x,s.ax,s.ay,s.at,s.CW,s.d,s.Q,s.b,this.d,s.w,s.f,s.z,s.cy,s.r,s.cx),this.a)},
@@ -47711,7 +47710,7 @@ $1(a){var s=this.a
 if((s.a.a&30)===0)s.hD(0,this.b)},
 $S:28}
 A.D0.prototype={
-co(a){return this.f!==a.f}}
+cn(a){return this.f!==a.f}}
 A.a9s.prototype={}
 A.KB.prototype={
 adv(a,b){var s=a==null?this.a:a
@@ -48072,7 +48071,7 @@ dA(a){var s=this.e
 A.a9x(s).a.toString
 A.a9x(s).Q1()}}
 A.Sa.prototype={
-co(a){return this.f!==a.f}}
+cn(a){return this.f!==a.f}}
 A.ajy.prototype={
 $2(a,b){if(!a.a)a.H(0,b)},
 $S:37}
@@ -48228,7 +48227,7 @@ xo(a,b){this.I9(a,b)
 this.ar(new A.ahY(this))},
 EO(a){var s,r=this
 r.WF(a)
-if(r.S_(a.gbx(a),a.gcm(a),!0)){r.ar(new A.ahW(r))
+if(r.S_(a.gbx(a),a.gcl(a),!0)){r.ar(new A.ahW(r))
 s=r.fr
 s===$&&A.a()
 s.cO(0)}else if(r.fy){r.ar(new A.ahX(r))
@@ -49388,7 +49387,7 @@ if(r==null)r=m.w
 return new A.BV(l,new A.w4(i,A.Ib(A.YA(l.d,r,k,k,q),s.k3,k),k),k)}}
 A.BV.prototype={
 np(a,b,c){return new A.An(this.w.c,c,null)},
-co(a){return!this.w.c.j(0,a.w.c)}}
+cn(a){return!this.w.c.j(0,a.w.c)}}
 A.pk.prototype={
 eI(a){var s,r=this.a
 r.toString
@@ -50101,7 +50100,7 @@ geS(){return B.p},
 ghu(){return B.p},
 gi2(){return B.p},
 ghm(){return B.p},
-cn(a){var s=this,r=s.a.ia(0,B.p),q=s.b.ia(0,B.p)
+cm(a){var s=this,r=s.a.ia(0,B.p),q=s.b.ia(0,B.p)
 return A.aoA(a,s.c.ia(0,B.p),s.d.ia(0,B.p),r,q)},
 zs(a){if(a instanceof A.c5)return this.a_(0,a)
 return this.Vy(a)},
@@ -50427,7 +50426,7 @@ r.ot(s)
 return r
 case 0:r=this.d
 if(r!=null){q=$.aa().cf()
-q.eV(r.a3(b).cn(a))
+q.eV(r.a3(b).cm(a))
 return q}r=$.aa().cf()
 r.k9(a)
 return r}},
@@ -50457,7 +50456,7 @@ r=r==null?null:A.bO(r)
 return A.K(s.a,s.b,s.c,s.d,r,s.f,null,s.w,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
 F8(a,b,c){var s
 switch(this.w.a){case 0:s=this.d
-if(s!=null)return s.a3(c).cn(new A.u(0,0,0+a.a,0+a.b)).t(0,b)
+if(s!=null)return s.a3(c).cm(new A.u(0,0,0+a.a,0+a.b)).t(0,b)
 return!0
 case 1:return b.a_(0,a.ll(B.h)).gdV()<=Math.min(a.a,a.b)/2}},
 wE(a){return new A.ael(this,a)}}
@@ -50467,7 +50466,7 @@ switch(s.w.a){case 1:a.mL(b.gb4(),b.gfu()/2,c)
 break
 case 0:s=s.d
 if(s==null||s.j(0,B.aj))a.em(b,c)
-else a.dW(s.a3(d).cn(b),c)
+else a.dW(s.a3(d).cm(b),c)
 break}},
 a7E(a,b,c){var s,r,q,p,o,n,m=this.b.e
 if(m==null)return
@@ -50502,7 +50501,7 @@ s.ot(r)
 break
 case 0:p=p.d
 if(p!=null){s=$.aa().cf()
-s.eV(p.a3(c.d).cn(b))}break}q.e.pk(a,b,s,c)},
+s.eV(p.a3(c.d).cm(b))}break}q.e.pk(a,b,s,c)},
 l(){var s=this.e
 if(s!=null)s.l()
 this.HI()},
@@ -51372,24 +51371,24 @@ return new A.cN(r,s)}if(a instanceof A.dr){s=A.aO(q.a,a.a,b)
 return new A.ew(q.b,b,a.b,s)}return q.nN(a,b)},
 mD(a){var s=a==null?this.a:a
 return new A.cN(this.b,s)},
-hY(a,b){var s=this.b.a3(b).cn(a).dr(-this.a.gdS()),r=$.aa().cf()
+hY(a,b){var s=this.b.a3(b).cm(a).dr(-this.a.gdS()),r=$.aa().cf()
 r.eV(s)
 return r},
 U5(a){return this.hY(a,null)},
 ey(a,b){var s=$.aa().cf()
-s.eV(this.b.a3(b).cn(a))
+s.eV(this.b.a3(b).cm(a))
 return s},
 hT(a,b,c,d){var s=this.b
 if(s.j(0,B.aj))a.em(b,c)
-else a.dW(s.a3(d).cn(b),c)},
+else a.dW(s.a3(d).cm(b),c)},
 gfO(){return!0},
 hS(a,b,c){var s,r,q,p,o=this.a
 switch(o.c.a){case 0:break
 case 1:s=this.b
-if(o.b===0)a.dW(s.a3(c).cn(b),o.hb())
+if(o.b===0)a.dW(s.a3(c).cm(b),o.hb())
 else{r=$.aa().bo()
 r.saJ(0,o.a)
-q=s.a3(c).cn(b)
+q=s.a3(c).cm(b)
 p=q.dr(-o.gdS())
 a.Ek(q.dr(o.gnG()),p,r)}break}},
 j(a,b){if(b==null)return!1
@@ -51449,7 +51448,7 @@ o.toString
 return o}}return A.hS(p,A.eV(a.gfu()/2),o)},
 hY(a,b){var s,r,q=this.uB(a,b)
 q.toString
-s=q.cn(this.qg(a))
+s=q.cm(this.qg(a))
 q=this.a
 q=A.U(q.b,0,q.d)
 q.toString
@@ -51459,11 +51458,11 @@ q.eV(r)
 return q},
 ey(a,b){var s=$.aa().cf(),r=this.uB(a,b)
 r.toString
-s.eV(r.cn(this.qg(a)))
+s.eV(r.cm(this.qg(a)))
 return s},
 hT(a,b,c,d){var s=this.uB(b,d)
 if(s.j(0,B.aj))a.em(this.qg(b),c)
-else a.dW(s.cn(this.qg(b)),c)},
+else a.dW(s.cm(this.qg(b)),c)},
 gfO(){return!0},
 mD(a){var s=this,r=a==null?s.a:a
 return new A.ew(s.b,s.c,s.d,r)},
@@ -51471,7 +51470,7 @@ hS(a,b,c){var s,r=this.a
 switch(r.c.a){case 0:break
 case 1:s=this.uB(b,c)
 s.toString
-a.dW(s.cn(this.qg(b)).dr(r.b*r.d/2),r.hb())
+a.dW(s.cm(this.qg(b)).dr(r.b*r.d/2),r.hb())
 break}},
 j(a,b){var s=this
 if(b==null)return!1
@@ -51666,18 +51665,18 @@ return o}else{o=A.hS(p,A.FN(new A.aA(o*s/2,r/2)),q)
 o.toString
 return o}}return p},
 hY(a,b){var s=$.aa().cf()
-s.eV(this.k8(a).cn(this.vK(a)).dr(-this.a.gdS()))
+s.eV(this.k8(a).cm(this.vK(a)).dr(-this.a.gdS()))
 return s},
 ey(a,b){var s=$.aa().cf()
-s.eV(this.k8(a).cn(this.vK(a)))
+s.eV(this.k8(a).cm(this.vK(a)))
 return s},
-hT(a,b,c,d){a.dW(this.k8(b).cn(this.vK(b)),c)},
+hT(a,b,c,d){a.dW(this.k8(b).cm(this.vK(b)),c)},
 gfO(){return!0},
 mD(a){var s=a==null?this.a:a
 return new A.ex(this.b,this.c,s)},
 hS(a,b,c){var s=this.a
 switch(s.c.a){case 0:break
-case 1:a.dW(this.k8(b).cn(this.vK(b)).dr(s.b*s.d/2),s.hb())
+case 1:a.dW(this.k8(b).cm(this.vK(b)).dr(s.b*s.d/2),s.hb())
 break}},
 j(a,b){if(b==null)return!1
 if(J.O(b)!==A.w(this))return!1
@@ -51711,7 +51710,7 @@ k8(a){var s=a.gfu()/2
 s=A.hR(this.b,A.FN(new A.aA(s,s)),1-this.c)
 s.toString
 return s},
-hY(a,b){var s,r=this.k8(a).a3(b).cn(a),q=this.a
+hY(a,b){var s,r=this.k8(a).a3(b).cm(a),q=this.a
 q=A.U(q.b,0,q.d)
 q.toString
 s=r.dr(-q)
@@ -51719,17 +51718,17 @@ q=$.aa().cf()
 q.eV(s)
 return q},
 ey(a,b){var s=$.aa().cf()
-s.eV(this.k8(a).a3(b).cn(a))
+s.eV(this.k8(a).a3(b).cm(a))
 return s},
 hT(a,b,c,d){var s=this.k8(b)
 if(s.j(0,B.aj))a.em(b,c)
-else a.dW(s.a3(d).cn(b),c)},
+else a.dW(s.a3(d).cm(b),c)},
 gfO(){return!0},
 mD(a){var s=a==null?this.a:a
 return new A.ey(this.b,this.c,s)},
 hS(a,b,c){var s=this.a
 switch(s.c.a){case 0:break
-case 1:a.dW(this.k8(b).a3(c).cn(b).dr(s.b*s.d/2),s.hb())
+case 1:a.dW(this.k8(b).a3(c).cm(b).dr(s.b*s.d/2),s.hb())
 break}},
 j(a,b){var s=this
 if(b==null)return!1
@@ -51935,7 +51934,7 @@ q=o.Q
 p=o.ax
 return m.Ud(o.y,o.z,q,o.as,n,s,p,r)},
 a0I(){return this.JE(null)},
-cq(){var s,r,q=this,p=q.ch
+cp(){var s,r,q=this,p=q.ch
 if(p==null){p=q.JE(B.di)
 s=$.aa().DN(p)
 p=q.e
@@ -52015,7 +52014,7 @@ p=(p==null?null:p.d)===0}else p=o
 else p=o
 if(p){p=q.uJ(a)
 s=p==null?null:p.c
-if(s!=null)return s}r=B.b.gaH(q.cq().GJ(0,1,B.kQ))
+if(s!=null)return s}r=B.b.gaH(q.cp().GJ(0,1,B.kQ))
 return r.d-r.b},
 uJ(a3){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a=this,a0=null,a1=a.b,a2=a1.a
 if(a2.c.gSs()<1||a.gkD().length===0)return a0
@@ -52043,7 +52042,7 @@ k=m?n:-n-1
 if(k===a1.r){a2=a.CW
 a2===$&&A.a()
 return a2}j=a2.c.GQ(n)
-if(j==null){i=a.cq().GU(0).gi7()
+if(j==null){i=a.cp().GU(0).gi7()
 h=a2.d
 if(h===$){g=a2.a0m()
 a2.d!==$&&A.ap()
@@ -53502,7 +53501,7 @@ p=a.gd1()
 o=j.lz
 o===$&&A.a()
 n=q.jU(p,o)
-q=q.cq()
+q=q.cp()
 return A.b([new A.pi(new A.j(0,q.gaN(q)).V(0,n).V(0,s),null)],t.fm)}else{q=B.b.gM(r)
 q=q.e===B.a1?q.a:q.c
 p=j.au
@@ -53545,7 +53544,7 @@ switch(A.aX().a){case 2:case 4:s=m-n
 n+=(l-s)/2
 q=new A.u(o,n,o+(p-o),n+s)
 break
-case 0:case 1:case 3:case 5:s=r.cq()
+case 0:case 1:case 3:case 5:s=r.cp()
 k=s.gaN(s)
 s=n-2+(l-k)/2
 q=new A.u(o,s,o+(p-o),s+k)
@@ -53570,7 +53569,7 @@ r=q.glc()
 r.hh(p)
 r.hP(m,s)
 return r.b.a.c.gpe()+(1+q.A)},
-Mt(a){var s,r,q,p=this,o=p.eq,n=p.au.cq()
+Mt(a){var s,r,q,p=this,o=p.eq,n=p.au.cp()
 n=n.gaN(n)
 if(o===1){s=p.a_3(a)
 r=null
@@ -53649,12 +53648,12 @@ s=n
 r.au.hP(m,s)},
 a0j(){var s,r,q=this
 switch(A.aX().a){case 2:case 4:s=q.A
-r=q.au.cq()
+r=q.au.cp()
 r=r.gaN(r)
 q.lz=new A.u(0,0,s,0+(r+2))
 break
 case 0:case 1:case 3:case 5:s=q.A
-r=q.au.cq()
+r=q.au.cp()
 r=r.gaN(r)
 q.lz=new A.u(0,2,s,2+(r-4))
 break}},
@@ -53699,9 +53698,9 @@ $label0$0:{if(1===k){s=m.b.a.c
 s=s.gaN(s)
 break $label0$0}s=m.b.a.c
 s=s.gaN(s)
-l=m.cq()
+l=m.cp()
 l=l.gaN(l)
-j=m.cq()
+j=m.cp()
 j=A.x(s,l*k,j.gaN(j)*k)
 s=j
 break $label0$0}g.id=new A.E(e,A.x(s,f.c,f.d))
@@ -53720,7 +53719,7 @@ g.h6.r9(g.gabv())
 g.h6.ow(0,g.b3)},
 PL(a,b){var s,r,q,p,o,n,m,l=this,k=l.gn(0),j=l.au,i=j.b.a.c
 i=Math.min(k.b,i.gaN(i))
-k=j.cq()
+k=j.cp()
 s=i-k.gaN(k)+5
 r=Math.min(l.gn(0).a,j.b.c)+4
 q=new A.u(-4,-4,r,s)
@@ -54835,7 +54834,7 @@ s=a.b
 r=A.m(s).i("be<1>")
 this.b.aft(a.giR(0),a.d,A.rk(new A.be(s,r),new A.a6i(),r.i("k.E"),t.Pb))},
 akt(a,b){var s,r,q,p,o,n=this
-if(a.gcm(a)!==B.b5&&a.gcm(a)!==B.aI)return
+if(a.gcl(a)!==B.b5&&a.gcl(a)!==B.aI)return
 if(t.ks.b(a))return
 $label0$0:{if(t.PB.b(a)){s=A.a1E()
 break $label0$0}s=b==null?n.a.$2(a.gbx(a),a.gpG()):b
@@ -56232,9 +56231,9 @@ d=a0
 c=a1.b
 d=c
 b=e
-a1=n.cq()
+a1=n.cp()
 a1=a1.gaN(a1)
-n=n.cq()
+n=n.cp()
 n=n.gaN(n)
 m=p?B.KU:B.jC
 return new A.mc(new A.p7(q,a1,b),new A.p7(o,n,d),m,j,!0)},
@@ -56731,7 +56730,7 @@ n=k.d
 if(n==null){k.d=r
 m=r}else m=n
 l=j.qt(b?r:m)
-n=j.p.cq()
+n=j.p.cp()
 p=j.d6(new A.j(s,l.b-n.gaN(n)/2))
 o=B.A
 break
@@ -56829,7 +56828,7 @@ r=t.AO
 if(p.length!==0){l.y=A.b([],r)
 for(s=p.length,o=0;o<p.length;p.length===s||(0,A.F)(p),++o){n=p[o]
 l.y.push(new A.u(n.a,n.b,n.c,n.d))}}else{m=s.qt(new A.ad(q,B.j))
-s=s.p.cq()
+s=s.p.cp()
 l.y=A.b([A.oP(m,new A.j(m.a+0,m.b+-s.gaN(s)))],r)}}s=l.y
 s.toString
 return s},
@@ -56843,7 +56842,7 @@ p=new A.u(l.a,l.b,l.c,l.d)
 for(o=1;o<q.length;++o){l=q[o]
 p=p.ih(new A.u(l.a,l.b,l.c,l.d))}m.z=p
 l=p}else{n=l.qt(new A.ad(r,B.j))
-l=l.p.cq()
+l=l.p.cp()
 l=A.oP(n,new A.j(n.a+0,n.b+-l.gaN(l)))
 m.z=l}}return l},
 az(a,b){var s,r,q,p,o,n,m=this,l=m.d
@@ -57163,7 +57162,7 @@ sbF(a){if(this.eb==a)return
 this.eb=a
 this.o8()},
 gqn(){var s=this.bR,r=this.gn(0)
-return s.cn(new A.u(0,0,0+r.a,0+r.b))},
+return s.cm(new A.u(0,0,0+r.a,0+r.b))},
 ca(a,b){var s=this
 if(s.A!=null){s.jl()
 if(!s.W.t(0,b))return!1}return s.k_(a,b)},
@@ -57215,7 +57214,7 @@ gqn(){var s,r,q=this.gn(0),p=0+q.a
 q=0+q.b
 switch(this.km.a){case 0:s=this.EA
 if(s==null)s=B.aj
-q=s.cn(new A.u(0,0,p,q))
+q=s.cm(new A.u(0,0,p,q))
 break
 case 1:s=p/2
 r=q/2
@@ -61241,7 +61240,7 @@ while(!0){if(!(n<s)){p=null
 o=0
 break}m=c.charCodeAt(n)
 if(m<=127)q[n]=m
-else{p=B.ch.eF(B.c.cp(c,n))
+else{p=B.ch.eF(B.c.co(c,n))
 o=n
 break}++n}if(p!=null){l.fU(b,o+p.length)
 b.mf(A.ad1(q,0,o))
@@ -62544,7 +62543,7 @@ A.adD.prototype={
 $0(){this.a.e=new A.G()},
 $S:0}
 A.AM.prototype={
-co(a){var s
+cn(a){var s
 if(this.w===a.w)s=!A.EN(a.r,this.r)
 else s=!0
 return s}}
@@ -63005,7 +63004,7 @@ $S:11}
 A.TZ.prototype={
 c5(a){return new A.TY(A.fI(null,null,null,t.h,t.X),this,B.V)}}
 A.hc.prototype={
-co(a){return this.w!==a.w}}
+cn(a){return this.w!==a.w}}
 A.Jk.prototype={
 aG(a){var s=this.e
 s=new A.Kd(B.d.aA(A.x(s,0,1)*255),s,!1,null,new A.aN(),A.ah())
@@ -63929,7 +63928,7 @@ $1(a){return new A.pv(this.a.a,this.b.$1(a),null)},
 $S:14}
 A.ln.prototype={
 np(a,b,c){return A.YA(c,this.w,null,this.y,this.x)},
-co(a){return!J.e(this.w,a.w)||!J.e(this.x,a.x)||!J.e(this.y,a.y)}}
+cn(a){return!J.e(this.w,a.w)||!J.e(this.x,a.x)||!J.e(this.y,a.y)}}
 A.YB.prototype={
 $1(a){var s=a.av(t.Uf)
 if(s==null)s=B.cR
@@ -64035,7 +64034,7 @@ q=r.c
 r=r.a
 p=q.a
 q=q.b
-return A.cG(A.b([A.cG(o,o,B.c.X(r,0,p)),A.cG(o,s,B.c.X(r,p,q)),A.cG(o,o,B.c.cp(r,q))],t.Ne),b,o)},
+return A.cG(A.b([A.cG(o,o,B.c.X(r,0,p)),A.cG(o,s,B.c.X(r,p,q)),A.cG(o,o,B.c.co(r,q))],t.Ne),b,o)},
 spU(a){var s,r=this.a,q=r.a.length,p=a.b
 if(q<p||q<a.a)throw A.d(A.iV("invalid text selection: "+a.k(0)))
 s=r.c
@@ -64248,9 +64247,9 @@ if(p.c&&r.gpl())s.push(new A.cP(new A.ZN(r),B.fb,q))
 if(p.d&&r.gHc())s.push(new A.cP(new A.ZO(r),B.fc,q))
 return s},
 U4(){var s,r,q,p,o,n,m,l=this,k=l.a.c.a.b,j=l.gS().au.e.Tv(),i=l.a.c.a.a
-if(j!==i||!k.gbE()||k.a===k.b){s=l.gS().au.cq()
+if(j!==i||!k.gbE()||k.a===k.b){s=l.gS().au.cp()
 s=s.gaN(s)
-r=l.gS().au.cq()
+r=l.gS().au.cp()
 return new A.Cy(r.gaN(r),s)}s=k.a
 r=k.b
 q=B.c.X(i,s,r)
@@ -64260,9 +64259,9 @@ n=l.gS().pO(new A.bL(s,s+o.length))
 s=(p?B.bM:new A.eb(q)).gad(0)
 m=l.gS().pO(new A.bL(r-s.length,r))
 s=n==null?null:n.d-n.b
-if(s==null){s=l.gS().au.cq()
+if(s==null){s=l.gS().au.cp()
 s=s.gaN(s)}r=m==null?null:m.d-m.b
-if(r==null){r=l.gS().au.cq()
+if(r==null){r=l.gS().au.cp()
 r=r.gaN(r)}return new A.Cy(r,s)},
 gada(){var s,r,q,p,o,n,m,l,k=this
 if(k.gS().iV!=null){s=k.gS().iV
@@ -64496,7 +64495,7 @@ p=j.gS().iD(o).gb4()}j.p1=p
 h=j.gS()
 r=j.p1
 r.toString
-n=j.gS().au.cq()
+n=j.gS().au.cp()
 j.p4=h.PL(r.a_(0,new A.j(0,n.gaN(n)/2)),q)
 j.p2=o
 n=j.gS()
@@ -64512,14 +64511,14 @@ r=j.p3
 r.toString
 m=h.a_(0,r)
 r=j.p1.V(0,m)
-h=j.gS().au.cq()
+h=j.gS().au.cp()
 l=r.a_(0,new A.j(0,h.gaN(h)/2))
 j.p4=j.gS().acB(l)
 h=j.gS()
 r=j.gS()
 n=j.p4
 n.toString
-k=j.gS().au.cq()
+k=j.gS().au.cp()
 k=n.V(0,new A.j(0,k.gaN(k)/2))
 j.p2=h.f9(A.bs(r.aM(0,i),k))
 k=j.gS()
@@ -64537,7 +64536,7 @@ h.jh(1,B.dE,B.iw)}break}},
 M7(){var s,r,q,p,o=this,n=o.gS(),m=o.p2
 m.toString
 m=n.iD(m).gPQ()
-n=o.gS().au.cq()
+n=o.gS().au.cp()
 s=m.a_(0,new A.j(0,n.gaN(n)/2))
 if(o.id.gaV(0)===B.a7){n=o.gS()
 m=o.p2
@@ -64593,7 +64592,7 @@ q=a.a
 p=r.a
 o=s-q>=p?p/2-a.gb4().a:A.x(0,s-p,q)
 n=B.ek}else{s=a.gb4()
-q=k.gS().au.cq()
+q=k.gS().au.cp()
 m=A.atE(s,Math.max(a.d-a.b,q.gaN(q)),a.c-a.a)
 s=m.d
 q=m.b
@@ -65159,7 +65158,7 @@ q=r.b
 if(o===s.length)r.MZ(2,q)
 else{r.MZ(1,q)
 r.zV(1,r.b)}o=r.a
-p.fq(new A.cg(B.c.X(o,0,r.b)+new A.eb(r.gK(0)).gad(0)+new A.eb(r.gK(0)).gM(0)+B.c.cp(o,r.c),A.kB(B.j,r.b+r.gK(0).length),B.aY),B.X)},
+p.fq(new A.cg(B.c.X(o,0,r.b)+new A.eb(r.gK(0)).gad(0)+new A.eb(r.gK(0)).gM(0)+B.c.co(o,r.c),A.kB(B.j,r.b+r.gK(0).length),B.aY),B.X)},
 MR(a){var s=this.a.c.a,r=a.a.Ga(a.c,a.b)
 this.fq(r,a.d)
 if(r.j(0,s))this.JK()},
@@ -65356,7 +65355,7 @@ j=l.fr
 j===$&&A.a()
 s=A.b([A.cG(k,k,B.c.X(l.a.c.a.a,0,q))],t.VO)
 B.b.T(s,r)
-s.push(A.cG(k,k,B.c.cp(l.a.c.a.a,q)))
+s.push(A.cG(k,k,B.c.co(l.a.c.a.a,q)))
 return A.cG(s,j,k)}p=!j.x&&j.d.gbz()
 if(l.gND()){o=!l.a.c.a.gRZ()||!p
 j=l.a.c.a
@@ -65462,7 +65461,7 @@ t.CA.a(s)
 if(s!=null){r=s.bw.gbE()
 r=!r||h.gfg().f.length===0}else r=!0
 if(r)return
-r=s.au.cq()
+r=s.au.cp()
 q=r.gaN(r)
 p=h.a.ap.d
 r=h.Q
@@ -65877,7 +65876,7 @@ gE(a){return this.ay}}
 A.OO.prototype={
 ds(a,b){var s
 switch(A.aX().a){case 0:case 2:case 1:s=a.b
-switch(s.gcm(s).a){case 0:a.a.hX()
+switch(s.gcl(s).a){case 0:a.a.hX()
 break
 case 1:case 2:case 3:case 5:a.a.hX()
 break
@@ -66185,7 +66184,7 @@ m=A.bd("while dispatching notifications for "+A.w(j).k(0))
 k=$.iW
 if(k!=null)k.$1(new A.bD(r,q,"widgets library",m,p,!1))}}},
 EU(a){var s,r,q=this
-switch(a.gcm(a).a){case 0:case 2:case 3:q.a=!0
+switch(a.gcl(a).a){case 0:case 2:case 3:q.a=!0
 s=B.iO
 break
 case 1:case 4:case 5:q.a=!1
@@ -66264,28 +66263,28 @@ if(s==null)s=null
 return s},
 aq(){return A.aGU()}}
 A.tW.prototype={
-gcl(a){var s=this,r=s.a.e
+gck(a){var s=this,r=s.a.e
 if(r==null){r=s.d
 if(r==null){r=s.JC()
 s.d=r}}return r},
 aE(){this.b0()
 this.Lu()},
 Lu(){var s,r,q,p=this
-if(!p.a.gCJ()){p.gcl(0).sfk(p.a.gfk())
-s=p.gcl(0)
+if(!p.a.gCJ()){p.gck(0).sfk(p.a.gfk())
+s=p.gck(0)
 p.a.gmG()
 s.smG(!0)
-p.gcl(0).sfc(p.a.gfc())
-if(p.a.y!=null){s=p.gcl(0)
+p.gck(0).sfc(p.a.gfc())
+if(p.a.y!=null){s=p.gck(0)
 r=p.a.y
 r.toString
-s.sjr(r)}}s=p.gcl(0)
+s.sjr(r)}}s=p.gck(0)
 p.f=s.b&&B.b.dv(s.gcD(),A.dN())
-p.r=p.gcl(0).gfk()
-p.gcl(0)
+p.r=p.gck(0).gfk()
+p.gck(0)
 p.w=!0
-p.e=p.gcl(0).gjB()
-s=p.gcl(0)
+p.e=p.gck(0).gjB()
+s=p.gck(0)
 r=p.c
 r.toString
 q=p.a.gxZ()
@@ -66295,12 +66294,12 @@ r=s.f
 s.f=r
 s.r=q==null?s.r:q
 p.y=s.ax=new A.a04(s)
-p.gcl(0).Y(0,p.gB6())},
+p.gck(0).Y(0,p.gB6())},
 JC(){var s=this,r=s.a.grz(),q=s.a.gjr(),p=s.a.gfk()
 s.a.gmG()
 return A.HG(q,r,p,!0,null,null,s.a.gfc())},
 l(){var s,r=this
-r.gcl(0).H(0,r.gB6())
+r.gck(0).H(0,r.gB6())
 r.y.a5(0)
 s=r.d
 if(s!=null)s.l()
@@ -66312,7 +66311,7 @@ this.KU()},
 KU(){var s,r=this
 if(!r.x&&r.a.f){s=r.c
 s.toString
-A.anS(s).aci(0,r.gcl(0))
+A.anS(s).aci(0,r.gck(0))
 r.x=!0}},
 dj(){this.mb()
 var s=this.y
@@ -66323,22 +66322,22 @@ q.b8(a)
 s=a.e
 r=q.a
 if(s==r.e){if(!r.gCJ()){q.a.gFJ()
-q.gcl(0)
-if(!J.e(q.a.gxZ(),q.gcl(0).r))q.gcl(0).r=q.a.gxZ()
-q.gcl(0).sfc(q.a.gfc())
-if(q.a.y!=null){s=q.gcl(0)
+q.gck(0)
+if(!J.e(q.a.gxZ(),q.gck(0).r))q.gck(0).r=q.a.gxZ()
+q.gck(0).sfc(q.a.gfc())
+if(q.a.y!=null){s=q.gck(0)
 r=q.a.y
 r.toString
-s.sjr(r)}q.gcl(0).sfk(q.a.gfk())
-s=q.gcl(0)
+s.sjr(r)}q.gck(0).sfk(q.a.gfk())
+s=q.gck(0)
 q.a.gmG()
 s.smG(!0)}}else{q.y.a5(0)
 if(s!=null)s.H(0,q.gB6())
 q.Lu()}if(a.f!==q.a.f)q.KU()},
-a3w(){var s=this,r=s.gcl(0).gjB(),q=s.gcl(0),p=q.b&&B.b.dv(q.gcD(),A.dN()),o=s.gcl(0).gfk()
-s.gcl(0)
+a3w(){var s=this,r=s.gck(0).gjB(),q=s.gck(0),p=q.b&&B.b.dv(q.gcD(),A.dN()),o=s.gck(0).gfk()
+s.gck(0)
 q=s.a.r
-if(q!=null)q.$1(s.gcl(0).gbz())
+if(q!=null)q.$1(s.gck(0).gbz())
 q=s.e
 q===$&&A.a()
 if(q!==r)s.ar(new A.agb(s,r))
@@ -66358,12 +66357,12 @@ n=p.a
 s=n.d
 if(n.at){if(A.aX()!==B.N){n=p.f
 n===$&&A.a()}else n=!1
-n=n?p.gcl(0).gpu():o
+n=n?p.gck(0).gpu():o
 r=p.f
 r===$&&A.a()
 q=p.e
 q===$&&A.a()
-s=A.cS(o,p.a.d,!1,o,o,!1,r,q,o,o,o,o,o,o,o,o,o,o,n,o,o,o,o,o,o,o,o,o,o)}return A.auY(s,p.gcl(0))}}
+s=A.cS(o,p.a.d,!1,o,o,!1,r,q,o,o,o,o,o,o,o,o,o,o,n,o,o,o,o,o,o,o,o,o,o)}return A.auY(s,p.gck(0))}}
 A.agb.prototype={
 $0(){this.a.e=this.b},
 $S:0}
@@ -66396,7 +66395,7 @@ return A.HH(this.a.gjr(),s,this.a.gfc())},
 N(a){var s,r,q=this,p=null,o=q.y
 o.toString
 o.G9(q.a.c)
-o=q.gcl(0)
+o=q.gck(0)
 s=q.a
 r=A.auY(s.d,o)
 return s.at?A.cS(p,r,!1,p,p,!0,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p):r}}
@@ -66743,21 +66742,21 @@ A.wS.prototype={
 aq(){return new A.Pc()}}
 A.BJ.prototype={}
 A.Pc.prototype={
-gcl(a){var s,r,q,p=this,o=p.d
+gck(a){var s,r,q,p=this,o=p.d
 if(o===$){s=p.a.c
 r=A.b([],t.bp)
 q=$.as()
 p.d!==$&&A.ap()
 o=p.d=new A.BJ(s,!1,!0,!0,!0,null,null,r,q)}return o},
-l(){this.gcl(0).l()
+l(){this.gck(0).l()
 this.aK()},
 aI(a){var s=this
 s.b8(a)
-if(a.c!==s.a.c)s.gcl(0).fr=s.a.c},
-N(a){var s=null,r=this.gcl(0)
+if(a.c!==s.a.c)s.gck(0).fr=s.a.c},
+N(a){var s=null,r=this.gck(0)
 return A.nQ(!1,!1,this.a.f,s,!0,!0,r,!1,s,s,s,s,s,!0)}}
 A.Kq.prototype={
-dA(a){a.ald(a.gcl(a))}}
+dA(a){a.ald(a.gck(a))}}
 A.oz.prototype={}
 A.Ja.prototype={
 dA(a){var s=$.Z.ac$.d.c,r=s.e
@@ -66833,7 +66832,7 @@ return A.R(null,r)}})
 return A.S($async$$0,r)},
 $S:23}
 A.BL.prototype={
-co(a){return this.r!==a.r}}
+cn(a){return this.r!==a.r}}
 A.jW.prototype={
 aq(){return A.aCL(A.m(this).i("jW.T"))}}
 A.fH.prototype={
@@ -67469,7 +67468,7 @@ TF(a,b){this.Hk(a,null)},
 Sq(a,b){b.be()},
 Gw(a){var s=this.e
 s.toString
-if(t.WB.a(s).co(a))this.WD(a)},
+if(t.WB.a(s).cn(a))this.WD(a)},
 pg(a){var s,r,q
 for(s=this.R,r=A.m(s),s=new A.u1(s,s.Ai(),r.i("u1<1>")),r=r.c;s.u();){q=s.d
 this.Sq(a,q==null?r.a(q):q)}}}
@@ -67732,12 +67731,12 @@ q.RH(r)}for(s=n.gbK(n),s=s.ga9(s);s.u();){r=s.gK(s)
 if(!o.d.ak(0,r))n.h(0,r).l()}},
 a4c(a){var s,r
 for(s=this.d,s=s.ge6(s),s=s.ga9(s);s.u();){r=s.gK(s)
-r.e.m(0,a.gbp(),a.gcm(a))
+r.e.m(0,a.gbp(),a.gcl(a))
 if(r.h8(a))r.hy(a)
 else r.p5(a)}},
 a4f(a){var s,r
 for(s=this.d,s=s.ge6(s),s=s.ga9(s);s.u();){r=s.gK(s)
-r.e.m(0,a.gbp(),a.gcm(a))
+r.e.m(0,a.gbp(),a.gcl(a))
 if(r.Fm(a))r.CU(a)}},
 abj(a){var s=this.e,r=s.a.d
 r.toString
@@ -68216,7 +68215,7 @@ return b instanceof A.eH&&b.a===this.a&&b.d===this.d&&A.cm(null,null)},
 gB(a){return A.K(this.a,"MaterialIcons",null,this.d,A.bO(B.FK),B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
 k(a){return"IconData(U+"+B.c.tq(B.i.lX(this.a,16).toUpperCase(),5,"0")+")"}}
 A.o4.prototype={
-co(a){return!this.w.j(0,a.w)},
+cn(a){return!this.w.j(0,a.w)},
 np(a,b,c){return A.Ib(c,this.w,null)}}
 A.a1T.prototype={
 $1(a){return A.Ib(this.c,A.asr(a).bB(this.b),this.a)},
@@ -68581,7 +68580,7 @@ s=r.i("hh<1>").a(s).Gt(a,q)
 r=s}else r=!0
 if(r)b.be()}}
 A.j_.prototype={
-co(a){return a.f!==this.f},
+cn(a){return a.f!==this.f},
 c5(a){var s=new A.u5(A.fI(null,null,null,t.h,t.X),this,B.V,A.m(this).i("u5<j_.T>"))
 this.f.Y(0,s.gBc())
 return s}}
@@ -68766,7 +68765,7 @@ zk(a){return!1},
 k(a){return"DefaultWidgetsLocalizations.delegate(en_US)"}}
 A.GU.prototype={$iAJ:1}
 A.C6.prototype={
-co(a){return this.w!==a.w}}
+cn(a){return this.w!==a.w}}
 A.xE.prototype={
 aq(){return new A.PS(new A.bw(null,t.A),A.A(t.u,t.z))}}
 A.PS.prototype={
@@ -68993,7 +68992,7 @@ return A.K(s.a,s.b,s.gd4().a,s.e,s.r,s.w,s.f,!1,s.as,s.at,s.ax,s.Q,s.z,s.ay,s.ch
 k(a){var s=this
 return"MediaQueryData("+B.b.bM(A.b(["size: "+s.a.k(0),"devicePixelRatio: "+B.d.aa(s.b,1),"textScaler: "+s.gd4().k(0),"platformBrightness: "+s.e.k(0),"padding: "+s.r.k(0),"viewPadding: "+s.w.k(0),"viewInsets: "+s.f.k(0),"systemGestureInsets: "+s.x.k(0),"alwaysUse24HourFormat: false","accessibleNavigation: "+s.z,"highContrast: "+s.as,"onOffSwitchLabels: "+s.at,"disableAnimations: "+s.ax,"invertColors: "+s.Q,"boldText: "+s.ay,"navigationMode: "+s.ch.b,"gestureSettings: "+s.CW.k(0),"displayFeatures: "+A.n(s.cx),"supportsShowingSystemContextMenu: false"],t.s),", ")+")"}}
 A.lQ.prototype={
-co(a){return!this.w.j(0,a.w)},
+cn(a){return!this.w.j(0,a.w)},
 Gt(a,b){return b.iP(0,new A.a5X(this,a))}}
 A.a5X.prototype={
 $1(a){var s=this,r=!1
@@ -69209,7 +69208,7 @@ s=s==null?"none":'"'+s+'"'
 return"RouteSettings("+s+", "+A.n(this.b)+")"}}
 A.oy.prototype={}
 A.o1.prototype={
-co(a){return a.f!=this.f}}
+cn(a){return a.f!=this.f}}
 A.a9j.prototype={}
 A.Mm.prototype={}
 A.GT.prototype={}
@@ -70382,7 +70381,7 @@ s.aX()},
 k(a){var s=A.bq(this)
 return"_OverlayEntryLocation["+s+"] "}}
 A.pK.prototype={
-co(a){return a.f!==this.f||a.r!==this.r}}
+cn(a){return a.f!==this.f||a.r!==this.r}}
 A.uj.prototype={
 c5(a){return new A.Qx(this,B.V)},
 aG(a){var s=new A.CL(null,new A.aN(),A.ah())
@@ -71022,7 +71021,7 @@ else if(o==="Menu.closed")m.gal8(m).$0()
 case 1:return A.R(q,r)}})
 return A.S($async$Bu,r)}}
 A.rD.prototype={
-co(a){return this.f!=a.f}}
+cn(a){return this.f!=a.f}}
 A.m8.prototype={
 aq(){return new A.S_(null,A.A(t.yb,t.M),null,!0,null)}}
 A.S_.prototype={
@@ -71030,7 +71029,7 @@ gdO(){return this.a.d},
 fP(a,b){},
 N(a){return A.AB(this.b3$,this.a.c)}}
 A.pq.prototype={
-co(a){return a.f!=this.f}}
+cn(a){return a.f!=this.f}}
 A.z6.prototype={
 aq(){return new A.CZ()}}
 A.CZ.prototype={
@@ -71343,7 +71342,7 @@ A.ajr.prototype={
 $0(){},
 $S:0}
 A.S7.prototype={
-co(a){return!0}}
+cn(a){return!0}}
 A.RX.prototype={
 wF(){return null},
 Ee(a){this.aw()},
@@ -71541,7 +71540,7 @@ dA(a){return A.rt(this.e).Si()}}
 A.pF.prototype={
 I(){return"_ModalRouteAspect."+this.b}}
 A.Ce.prototype={
-co(a){var s=this
+cn(a){var s=this
 return s.w!==a.w||s.x!==a.x||s.y!==a.y||s.z!==a.z},
 Gt(a,b){return b.iP(0,new A.ai8(this,a))}}
 A.ai8.prototype={
@@ -71949,14 +71948,14 @@ case 4:return B.z3
 case 0:case 1:case 3:case 5:return B.Aj}},
 k(a){return"ScrollBehavior"}}
 A.a9L.prototype={
-$1(a){return A.aD1(a.gcm(a))},
+$1(a){return A.aD1(a.gcl(a))},
 $S:412}
 A.a9M.prototype={
-$1(a){var s=a.gcm(a),r=t.av
+$1(a){var s=a.gcl(a),r=t.av
 return new A.ri(A.bm(20,null,!1,r),s,A.bm(20,null,!1,r))},
 $S:413}
 A.a9N.prototype={
-$1(a){return new A.iw(a.gcm(a),A.bm(20,null,!1,t.av))},
+$1(a){return new A.iw(a.gcl(a),A.bm(20,null,!1,t.av))},
 $S:157}
 A.al8.prototype={
 gmK(){var s=this.f
@@ -71974,7 +71973,7 @@ return s},
 yR(a){return this.a.yR(a)},
 k(a){return"_WrappedScrollBehavior"}}
 A.zc.prototype={
-co(a){var s=A.w(this.f),r=A.w(a.f)
+cn(a){var s=A.w(this.f),r=A.w(a.f)
 return s!==r}}
 A.zd.prototype={
 jq(a,b,c){return this.ac7(a,b,c)},
@@ -72183,7 +72182,7 @@ s=this.bZ$
 r=s===0?"local":"remote"
 a.push("depth: "+s+" ("+r+")")}}
 A.D6.prototype={
-co(a){return this.f!==a.f}}
+cn(a){return this.f!==a.f}}
 A.mH.prototype={
 ahk(a,b){return this.a.$1(b)}}
 A.zf.prototype={
@@ -72903,7 +72902,7 @@ A.aa_.prototype={
 $1(a){return null},
 $S:421}
 A.D8.prototype={
-co(a){return this.r!==a.r}}
+cn(a){return this.r!==a.r}}
 A.p4.prototype={
 gQq(){var s,r=this
 switch(r.a.c.a){case 0:s=r.d.at
@@ -73102,7 +73101,7 @@ r=A.ek(new A.b4(p,s),s.i("k.E"))
 p=this.w
 p===$&&A.a()
 p=p.gyk()
-q=r.iP(0,p.gkf(p))&&a.gcm(a)===B.b5
+q=r.iP(0,p.gkf(p))&&a.gcl(a)===B.b5
 p=this.a
 switch((q?A.aKM(A.aY(p.c)):A.aY(p.c)).a){case 0:p=a.gpT().a
 break
@@ -74411,7 +74410,7 @@ r=this.CW
 r===$&&A.a()
 return r.Rz(s,b,!0)},
 EO(a){var s,r=this
-if(r.S_(a.gbx(a),a.gcm(a),!0)){r.Q=!0
+if(r.S_(a.gbx(a),a.gcl(a),!0)){r.Q=!0
 s=r.x
 s===$&&A.a()
 s.cO(0)
@@ -74506,14 +74505,14 @@ $1(a){a.R=this.a.gRo()},
 $S:433}
 A.a8_.prototype={
 $1(a){var s
-switch(a.gcm(a).a){case 1:case 4:s=this.a
+switch(a.gcl(a).a){case 1:case 4:s=this.a
 if(s.gmN())s.EP(a)
 break
 case 2:case 3:case 5:case 0:break}},
 $S:46}
 A.a80.prototype={
 $1(a){var s
-switch(a.gcm(a).a){case 1:case 4:s=this.a
+switch(a.gcl(a).a){case 1:case 4:s=this.a
 if(s.gmN())s.EO(a)
 break
 case 2:case 3:case 5:case 0:break}},
@@ -75075,7 +75074,7 @@ if(r==null)return new A.rZ(null,s.d,null)
 return A.atY(s.d,r)},
 $ia9:1}
 A.rZ.prototype={
-co(a){return a.f!=this.f}}
+cn(a){return a.f!=this.f}}
 A.KZ.prototype={
 gagk(){var s=this.a.gP()
 s.toString
@@ -75094,7 +75093,7 @@ A.Sw.prototype={
 N(a){var s=this.a.c,r=this.d
 return new A.Sx(r===$?this.d=A.A(t.K,t.X):r,s,null)}}
 A.Sx.prototype={
-co(a){return this.x!==a.x},
+cn(a){return this.x!==a.x},
 Gt(a,b){var s,r,q,p
 for(s=b.ga9(b),r=this.x,q=a.x;s.u();){p=s.gK(s)
 if(!J.e(r.h(0,p),q.h(0,p)))return!0}return!1}}
@@ -75234,7 +75233,7 @@ r.y2$=0
 s.aK()},
 N(a){return new A.SA(this.d,new A.pb(this.e,B.fS,this.a.c,null,null),null)}}
 A.SA.prototype={
-co(a){return this.f!==a.f}}
+cn(a){return this.f!==a.f}}
 A.Sy.prototype={}
 A.Sz.prototype={}
 A.SB.prototype={}
@@ -75882,7 +75881,7 @@ if(s.cr)s.kl.yN(s)
 s.fw()}}
 A.tl.prototype={}
 A.qA.prototype={
-co(a){var s=!0
+cn(a){var s=!0
 if(this.w.j(0,a.w))if(this.z===a.z)s=this.as!==a.as
 return s},
 np(a,b,c){var s=this
@@ -76260,7 +76259,7 @@ o=(n.length===0?B.bM:new A.eb(n)).gM(0)
 m=j.r.b.a
 l=s.pO(new A.bL(m,m+o.length))}else l=i
 o=l==null?i:l.d-l.b
-if(o==null){o=r.cq()
+if(o==null){o=r.cp()
 o=o.gaN(o)}h.sahi(o)
 o=r.w
 o.toString
@@ -76274,7 +76273,7 @@ q=(n.length===0?B.bM:new A.eb(n)).gad(0)
 o=j.r.b.b
 k=s.pO(new A.bL(o-q.length,o))}else k=i
 q=k==null?i:k.d-k.b
-if(q==null){r=r.cq()
+if(q==null){r=r.cp()
 r=r.gaN(r)}else r=q
 h.sahh(r)
 h.sUC(s.z_(j.r.b))
@@ -76317,16 +76316,16 @@ l.Q=r
 q=l.e
 q===$&&A.a()
 p=B.b.gad(q.cy)
-o=k.au.cq()
+o=k.au.cp()
 o=o.gaN(o)
 n=A.bs(k.aM(0,null),new A.j(0,p.a.b-o/2)).b
 l.as=n-r
 m=k.f9(new A.j(s.a,n))
 if(l.at==null)l.at=l.r.b
 q.pY(l.kX(m,s,k))},
-Kt(a,b){var s=a-b,r=s<0?-1:1,q=this.b.au,p=q.cq()
+Kt(a,b){var s=a-b,r=s<0?-1:1,q=this.b.au,p=q.cp()
 p=B.d.jx(Math.abs(s)/p.gaN(p))
-q=q.cq()
+q=q.cp()
 return b+r*p*q.gaN(q)},
 a4H(a){var s,r,q,p,o,n,m,l=this,k=l.b
 if(k.y==null)return
@@ -76365,7 +76364,7 @@ l.ax=r
 q=l.e
 q===$&&A.a()
 p=B.b.gM(q.cy)
-o=k.au.cq()
+o=k.au.cp()
 o=o.gaN(o)
 n=A.bs(k.aM(0,null),new A.j(0,p.a.b-o/2)).b
 l.ay=n-r
@@ -77447,7 +77446,7 @@ this.e.sE(0,s)},
 N(a){var s=this.e
 return new A.BA(s.a,s,this.a.d,null)}}
 A.BA.prototype={
-co(a){return this.f!==a.f}}
+cn(a){return this.f!==a.f}}
 A.fU.prototype={
 rs(a){var s,r=this
 r.en$=new A.tq(a)
@@ -77836,9 +77835,9 @@ B.b.a0(r.z)
 B.b.a0(r.Q)
 r.ch.a0(0)}s.Ig()}}
 A.pQ.prototype={
-co(a){return this.f!==a.f}}
+cn(a){return this.f!==a.f}}
 A.Cv.prototype={
-co(a){return this.f!==a.f}}
+cn(a){return this.f!==a.f}}
 A.Bm.prototype={
 j(a,b){var s=this
 if(b==null)return!1
@@ -80530,36 +80529,36 @@ q=A.c_(s,b2,b2,b2,A.er(b2,b2,B.i7,b2,b2,b2,b2,b2,b2,b2,b2,13,b2,b2,b2,b2,1.5,!0,
 p=B.rA.h(0,b5).h(0,"program")
 p.toString
 p=A.c_(p,b2,b2,b2,A.er(b2,b2,B.ie,b2,b2,b2,b2,b2,b2,b2,b2,12,b2,b2,b2,b2,b2,!0,b2,b2,b2,b2,b2,b2,b2,b2),b2,b2)
-o=b1.ck(b3.r)
-n=b1.ck(b3.f)
-m=b1.ck(b2)
-l=b1.ck(b3.z)
-k=b1.ck(b3.p1)
-j=b1.ck(b3.w)
-i=b1.ck(b3.ok)
-h=b1.ck(b3.ax)
-g=b1.ck(b3.cx)
-f=b1.ck(b2)
-e=b1.ck(b2)
-d=b1.ck(b3.as)
-c=b1.ck(b3.at)
-b=b1.ck(b2)
-a=b1.ck(b3.ch)
-a0=b1.ck(b3.CW)
-a1=b1.ck(b2)
-a2=b1.ck(b3.fy)
-a3=b1.ck(b3.go)
-a4=b1.ck(b2)
-a5=b1.ck(b3.k1)
-a6=b1.ck(b2)
-a7=b1.ck(b3.k4)
-a8=b1.ck(b2)
-a9=b1.ck(b3.p3)
+o=b1.cq(b3.r)
+n=b1.cq(b3.f)
+m=b1.cq(b2)
+l=b1.cq(b3.z)
+k=b1.cq(b3.p1)
+j=b1.cq(b3.w)
+i=b1.cq(b3.ok)
+h=b1.cq(b3.ax)
+g=b1.cq(b3.cx)
+f=b1.cq(b2)
+e=b1.cq(b2)
+d=b1.cq(b3.as)
+c=b1.cq(b3.at)
+b=b1.cq(b2)
+a=b1.cq(b3.ch)
+a0=b1.cq(b3.CW)
+a1=b1.cq(b2)
+a2=b1.cq(b3.fy)
+a3=b1.cq(b3.go)
+a4=b1.cq(b2)
+a5=b1.cq(b3.k1)
+a6=b1.cq(b2)
+a7=b1.cq(b3.k4)
+a8=b1.cq(b2)
+a9=b1.cq(b3.p3)
 b5=B.rA.h(0,b5).h(0,"language")
 b5.toString
 b0=t.p
-return A.eE(b2,A.fA(A.b([new A.cl(B.CK,r,b2),new A.cl(B.CI,q,b2),A.eE(b2,A.oX(A.b([p,B.eA,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,B.jV,A.c_(b5,b2,b2,b2,A.er(b2,b2,B.ie,b2,b2,b2,b2,b2,b2,b2,b2,12,b2,b2,b2,b2,b2,!0,b2,b2,b2,b2,b2,b2,b2,b2),b2,b2),B.eA,b1.ck(b3.db),b1.ck(b3.cy),b1.ck(b3.fr),b1.ck(b3.dx),b1.ck(b3.fx),b1.ck(b3.k2),b1.ck(b3.p4)],b0),B.a9,B.a4,B.a5),B.t,b2,b2,new A.d7(B.ig,b2,b2,B.yX,b2,b2,B.aq),b2,b2,b2,B.CJ,1/0)],b0),B.b0,B.a4,B.a5),B.bn,b2,b2,new A.d7(B.i1,b2,b2,b4,b2,b2,B.aq),b2,b2,b2,b2,620)},
-ck(a){if(a==null)return B.af
+return A.eE(b2,A.fA(A.b([new A.cl(B.CK,r,b2),new A.cl(B.CI,q,b2),A.eE(b2,A.oX(A.b([p,B.eA,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,B.jV,A.c_(b5,b2,b2,b2,A.er(b2,b2,B.ie,b2,b2,b2,b2,b2,b2,b2,b2,12,b2,b2,b2,b2,b2,!0,b2,b2,b2,b2,b2,b2,b2,b2),b2,b2),B.eA,b1.cq(b3.db),b1.cq(b3.cy),b1.cq(b3.fr),b1.cq(b3.dx),b1.cq(b3.fx),b1.cq(b3.k2)],b0),B.a9,B.a4,B.a5),B.t,b2,b2,new A.d7(B.ig,b2,b2,B.yX,b2,b2,B.aq),b2,b2,b2,B.CJ,1/0)],b0),B.b0,B.a4,B.a5),B.bn,b2,b2,new A.d7(B.i1,b2,b2,b4,b2,b2,B.aq),b2,b2,b2,b2,620)},
+cq(a){if(a==null)return B.af
 return new A.cl(B.CW,A.Ic(a,B.eR,22,22),null)}}
 A.JP.prototype={
 N(a){var s,r,q,p,o=null,n=A.bA(a,o,t.w).w,m=this.c,l=B.HC.h(0,m).h(0,"title")
@@ -86466,39 +86465,39 @@ s($,"aON","ayG",()=>new A.G())
 r($,"aQX","aqA",()=>{var q=null
 return A.aAX(q,A.eV(100),q,q,B.Eg,q,B.aq)})
 s($,"aRd","aAb",()=>{var q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a="assets/projects/bosch.png",a0="assets/images/vscode.png",a1="assets/images/python1.png",a2=null,a3="https://drive.google.com/file/d/1xihHtp19BGyOwEeHcLCXFPKwkAp5EWmO/view",a4="assets/images/arduino.png",a5="assets/images/gx3.png",a6="assets/images/ladder.png",a7="assets/images/forms.png",a8="assets/images/automate.png",a9="assets/images/lists.png",b0="assets/images/bi.png",b1="assets/images/dax.png",b2="assets/images/kafka.png",b3="assets/images/azure.png",b4="assets/images/apps.png",b5="assets/images/sql.png",b6="assets/projects/daikin.png",b7="assets/images/pycharm.png",b8=t.N,b9=A.a1(["en","Energy Monitoring Dashboard","th","\u0e41\u0e14\u0e0a\u0e1a\u0e2d\u0e23\u0e4c\u0e14\u0e15\u0e34\u0e14\u0e15\u0e32\u0e21\u0e1e\u0e25\u0e31\u0e07\u0e07\u0e32\u0e19"],b8,b8)
-b9=A.em(a2,a2,a2,a2,a2,a2,a2,a2,a2,a2,"assets/images/grafana.png",a2,"assets/projects/meter.png","assets/images/influxdb.png",a2,a2,"",a2,a,a2,a2,a1,a2,a2,a2,a2,A.a1(["en","Real-time dashboard for monitoring electricity, water, and utility consumption in real time across machines, production lines, and facilities.\nHelps organizations detect abnormal usage, control costs, and improve energy efficiency.","th","Real-time dashboard \u0e2a\u0e33\u0e2b\u0e23\u0e31\u0e1a monitoring \u0e01\u0e32\u0e23\u0e43\u0e0a\u0e49\u0e44\u0e1f\u0e1f\u0e49\u0e32 \u0e19\u0e49\u0e33 \u0e41\u0e25\u0e30 utility \u0e41\u0e1a\u0e1a real time \u0e43\u0e19\u0e23\u0e30\u0e14\u0e31\u0e1a\u0e40\u0e04\u0e23\u0e37\u0e48\u0e2d\u0e07\u0e08\u0e31\u0e01\u0e23 production line \u0e41\u0e25\u0e30 facility\n\u0e0a\u0e48\u0e27\u0e22\u0e43\u0e2b\u0e49\u0e2d\u0e07\u0e04\u0e4c\u0e01\u0e23\u0e2a\u0e32\u0e21\u0e32\u0e23\u0e16\u0e15\u0e23\u0e27\u0e08\u0e08\u0e31\u0e1a\u0e01\u0e32\u0e23\u0e43\u0e0a\u0e49\u0e07\u0e32\u0e19\u0e17\u0e35\u0e48\u0e1c\u0e34\u0e14\u0e1b\u0e01\u0e15\u0e34 \u0e04\u0e27\u0e1a\u0e04\u0e38\u0e21\u0e15\u0e49\u0e19\u0e17\u0e38\u0e19 \u0e41\u0e25\u0e30\u0e40\u0e1e\u0e34\u0e48\u0e21\u0e1b\u0e23\u0e30\u0e2a\u0e34\u0e17\u0e18\u0e34\u0e20\u0e32\u0e1e\u0e14\u0e49\u0e32\u0e19\u0e1e\u0e25\u0e31\u0e07\u0e07\u0e32\u0e19"],b8,b8),b9,a0)
+b9=A.em(a2,a2,a2,a2,a2,a2,a2,a2,a2,a2,"assets/images/grafana.png",a2,"assets/projects/meter.png","assets/images/influxdb.png",a2,a2,"",a2,a,a2,a2,a1,a2,a2,a2,A.a1(["en","Real-time dashboard for monitoring electricity, water, and utility consumption in real time across machines, production lines, and facilities.\nHelps organizations detect abnormal usage, control costs, and improve energy efficiency.","th","Real-time dashboard \u0e2a\u0e33\u0e2b\u0e23\u0e31\u0e1a monitoring \u0e01\u0e32\u0e23\u0e43\u0e0a\u0e49\u0e44\u0e1f\u0e1f\u0e49\u0e32 \u0e19\u0e49\u0e33 \u0e41\u0e25\u0e30 utility \u0e41\u0e1a\u0e1a real time \u0e43\u0e19\u0e23\u0e30\u0e14\u0e31\u0e1a\u0e40\u0e04\u0e23\u0e37\u0e48\u0e2d\u0e07\u0e08\u0e31\u0e01\u0e23 production line \u0e41\u0e25\u0e30 facility\n\u0e0a\u0e48\u0e27\u0e22\u0e43\u0e2b\u0e49\u0e2d\u0e07\u0e04\u0e4c\u0e01\u0e23\u0e2a\u0e32\u0e21\u0e32\u0e23\u0e16\u0e15\u0e23\u0e27\u0e08\u0e08\u0e31\u0e1a\u0e01\u0e32\u0e23\u0e43\u0e0a\u0e49\u0e07\u0e32\u0e19\u0e17\u0e35\u0e48\u0e1c\u0e34\u0e14\u0e1b\u0e01\u0e15\u0e34 \u0e04\u0e27\u0e1a\u0e04\u0e38\u0e21\u0e15\u0e49\u0e19\u0e17\u0e38\u0e19 \u0e41\u0e25\u0e30\u0e40\u0e1e\u0e34\u0e48\u0e21\u0e1b\u0e23\u0e30\u0e2a\u0e34\u0e17\u0e18\u0e34\u0e20\u0e32\u0e1e\u0e14\u0e49\u0e32\u0e19\u0e1e\u0e25\u0e31\u0e07\u0e07\u0e32\u0e19"],b8,b8),b9,a0)
 q=A.a1(["en","Bubble Test Detection","th","\u0e23\u0e30\u0e1a\u0e1a\u0e01\u0e32\u0e23\u0e15\u0e23\u0e27\u0e08\u0e2a\u0e2d\u0e1a\u0e01\u0e32\u0e23\u0e17\u0e33\u0e07\u0e32\u0e19\u0e02\u0e2d\u0e07\u0e01\u0e32\u0e23\u0e17\u0e14\u0e2a\u0e2d\u0e1a\u0e01\u0e32\u0e23\u0e23\u0e31\u0e48\u0e27"],b8,b8)
-q=A.em(a2,a2,a2,a2,a2,a2,a2,a2,a2,a2,a2,a2,"assets/projects/bubbleimg.png",a2,a2,a2,"https://drive.google.com/file/d/14bgDd9x54K7kgpSyGrN-kbkZOjuW98uI/view",a2,a,a2,a2,a1,a2,a2,a2,a2,A.a1(["en","To detect brake master cylinder at bubble test station and recheck if operator tests bubble from counting the number of brake master that is picked up or not","th","\u0e43\u0e0a\u0e49\u0e2a\u0e33\u0e2b\u0e23\u0e31\u0e1a\u0e15\u0e23\u0e27\u0e08\u0e08\u0e31\u0e1a brake master cylinder \u0e17\u0e35\u0e48 bubble test station \u0e41\u0e25\u0e30\u0e15\u0e23\u0e27\u0e08\u0e2a\u0e2d\u0e1a\u0e0b\u0e49\u0e33\u0e27\u0e48\u0e32 operator \u0e44\u0e14\u0e49\u0e17\u0e33\u0e01\u0e32\u0e23\u0e17\u0e14\u0e2a\u0e2d\u0e1a bubble \u0e08\u0e23\u0e34\u0e07\u0e2b\u0e23\u0e37\u0e2d\u0e44\u0e21\u0e48 \u0e42\u0e14\u0e22\u0e01\u0e32\u0e23\u0e19\u0e31\u0e1a\u0e08\u0e33\u0e19\u0e27\u0e19 brake master \u0e17\u0e35\u0e48\u0e16\u0e39\u0e01\u0e2b\u0e22\u0e34\u0e1a\u0e02\u0e36\u0e49\u0e19\u0e21\u0e32\u0e17\u0e14\u0e2a\u0e2d\u0e1a"],b8,b8),q,a0)
+q=A.em(a2,a2,a2,a2,a2,a2,a2,a2,a2,a2,a2,a2,"assets/projects/bubbleimg.png",a2,a2,a2,"https://drive.google.com/file/d/14bgDd9x54K7kgpSyGrN-kbkZOjuW98uI/view",a2,a,a2,a2,a1,a2,a2,a2,A.a1(["en","To detect brake master cylinder at bubble test station and recheck if operator tests bubble from counting the number of brake master that is picked up or not","th","\u0e43\u0e0a\u0e49\u0e2a\u0e33\u0e2b\u0e23\u0e31\u0e1a\u0e15\u0e23\u0e27\u0e08\u0e08\u0e31\u0e1a brake master cylinder \u0e17\u0e35\u0e48 bubble test station \u0e41\u0e25\u0e30\u0e15\u0e23\u0e27\u0e08\u0e2a\u0e2d\u0e1a\u0e0b\u0e49\u0e33\u0e27\u0e48\u0e32 operator \u0e44\u0e14\u0e49\u0e17\u0e33\u0e01\u0e32\u0e23\u0e17\u0e14\u0e2a\u0e2d\u0e1a bubble \u0e08\u0e23\u0e34\u0e07\u0e2b\u0e23\u0e37\u0e2d\u0e44\u0e21\u0e48 \u0e42\u0e14\u0e22\u0e01\u0e32\u0e23\u0e19\u0e31\u0e1a\u0e08\u0e33\u0e19\u0e27\u0e19 brake master \u0e17\u0e35\u0e48\u0e16\u0e39\u0e01\u0e2b\u0e22\u0e34\u0e1a\u0e02\u0e36\u0e49\u0e19\u0e21\u0e32\u0e17\u0e14\u0e2a\u0e2d\u0e1a"],b8,b8),q,a0)
 p=A.a1(["en","Booster Detection","th","\u0e01\u0e32\u0e23\u0e15\u0e23\u0e27\u0e08\u0e08\u0e31\u0e1a Booster"],b8,b8)
-p=A.em(a2,a2,a2,a2,a2,a2,a2,a2,a2,a2,a2,a2,"assets/projects/boostersimg.png",a2,a2,a2,"https://drive.google.com/file/d/1UEFgX261eHq8ShBtsvNvggBpnPP2_hP2/view",a2,a,a2,a2,a1,a2,a2,a2,a2,A.a1(["en","To detect clevis of booster\nTo check standard of pin dimension of clevis based on model\nTo recheck if operator tests pin dimension by putting clevis pin into eye daimeter and it is fit as standdard size of pin diameter","th","\u0e43\u0e0a\u0e49\u0e2a\u0e33\u0e2b\u0e23\u0e31\u0e1a\u0e15\u0e23\u0e27\u0e08\u0e08\u0e31\u0e1a clevis \u0e02\u0e2d\u0e07 booster\n\u0e15\u0e23\u0e27\u0e08\u0e2a\u0e2d\u0e1a\u0e21\u0e32\u0e15\u0e23\u0e10\u0e32\u0e19 pin dimension \u0e02\u0e2d\u0e07 clevis \u0e15\u0e32\u0e21 model\n\u0e15\u0e23\u0e27\u0e08\u0e2a\u0e2d\u0e1a\u0e0b\u0e49\u0e33\u0e27\u0e48\u0e32 operator \u0e44\u0e14\u0e49\u0e17\u0e14\u0e2a\u0e2d\u0e1a pin dimension \u0e2b\u0e23\u0e37\u0e2d\u0e44\u0e21\u0e48 \u0e42\u0e14\u0e22\u0e01\u0e32\u0e23\u0e43\u0e2a\u0e48 clevis pin \u0e25\u0e07\u0e43\u0e19 eye diameter \u0e41\u0e25\u0e30\u0e15\u0e23\u0e27\u0e08\u0e2a\u0e2d\u0e1a\u0e27\u0e48\u0e32\u0e15\u0e23\u0e07\u0e15\u0e32\u0e21 standard size \u0e2b\u0e23\u0e37\u0e2d\u0e44\u0e21\u0e48"],b8,b8),p,a0)
+p=A.em(a2,a2,a2,a2,a2,a2,a2,a2,a2,a2,a2,a2,"assets/projects/boostersimg.png",a2,a2,a2,"https://drive.google.com/file/d/1UEFgX261eHq8ShBtsvNvggBpnPP2_hP2/view",a2,a,a2,a2,a1,a2,a2,a2,A.a1(["en","To detect clevis of booster\nTo check standard of pin dimension of clevis based on model\nTo recheck if operator tests pin dimension by putting clevis pin into eye daimeter and it is fit as standdard size of pin diameter","th","\u0e43\u0e0a\u0e49\u0e2a\u0e33\u0e2b\u0e23\u0e31\u0e1a\u0e15\u0e23\u0e27\u0e08\u0e08\u0e31\u0e1a clevis \u0e02\u0e2d\u0e07 booster\n\u0e15\u0e23\u0e27\u0e08\u0e2a\u0e2d\u0e1a\u0e21\u0e32\u0e15\u0e23\u0e10\u0e32\u0e19 pin dimension \u0e02\u0e2d\u0e07 clevis \u0e15\u0e32\u0e21 model\n\u0e15\u0e23\u0e27\u0e08\u0e2a\u0e2d\u0e1a\u0e0b\u0e49\u0e33\u0e27\u0e48\u0e32 operator \u0e44\u0e14\u0e49\u0e17\u0e14\u0e2a\u0e2d\u0e1a pin dimension \u0e2b\u0e23\u0e37\u0e2d\u0e44\u0e21\u0e48 \u0e42\u0e14\u0e22\u0e01\u0e32\u0e23\u0e43\u0e2a\u0e48 clevis pin \u0e25\u0e07\u0e43\u0e19 eye diameter \u0e41\u0e25\u0e30\u0e15\u0e23\u0e27\u0e08\u0e2a\u0e2d\u0e1a\u0e27\u0e48\u0e32\u0e15\u0e23\u0e07\u0e15\u0e32\u0e21 standard size \u0e2b\u0e23\u0e37\u0e2d\u0e44\u0e21\u0e48"],b8,b8),p,a0)
 o=A.a1(["en","Smart Work Instruction Monitor","th","\u0e23\u0e30\u0e1a\u0e1a\u0e15\u0e23\u0e27\u0e08\u0e2a\u0e2d\u0e1a\u0e01\u0e32\u0e23\u0e17\u0e33\u0e07\u0e32\u0e19\u0e2d\u0e31\u0e08\u0e09\u0e23\u0e34\u0e22\u0e30"],b8,b8)
-o=A.em(a2,a4,a2,a2,a2,a2,a2,a2,a2,a2,a2,a5,"assets/projects/swim.png",a2,a2,a6,a3,a2,a,a2,a2,a1,a2,a2,a2,a2,A.a1(["en","To detect the procedures and steps based on Work Instruction (WI)\nThis project is to detect hands based on sequences, such as picking tools and assembly as safety standard\nIf some steps are found that it doesn't align with the WI, the system will alarm to remind the sequence and save NOK into database\nSave time for training new comer about 30 minutes and Save cost for this solutions with pakaged software from supplier about 98.3%","th","\u0e43\u0e0a\u0e49\u0e2a\u0e33\u0e2b\u0e23\u0e31\u0e1a\u0e15\u0e23\u0e27\u0e08\u0e08\u0e31\u0e1a\u0e02\u0e31\u0e49\u0e19\u0e15\u0e2d\u0e19\u0e01\u0e32\u0e23\u0e17\u0e33\u0e07\u0e32\u0e19\u0e15\u0e32\u0e21 Work Instruction (WI)\n\u0e42\u0e1b\u0e23\u0e40\u0e08\u0e04\u0e19\u0e35\u0e49\u0e43\u0e0a\u0e49\u0e15\u0e23\u0e27\u0e08\u0e08\u0e31\u0e1a\u0e21\u0e37\u0e2d\u0e08\u0e32\u0e01\u0e25\u0e33\u0e14\u0e31\u0e1a\u0e02\u0e31\u0e49\u0e19\u0e15\u0e2d\u0e19 \u0e40\u0e0a\u0e48\u0e19 \u0e01\u0e32\u0e23\u0e2b\u0e22\u0e34\u0e1a\u0e40\u0e04\u0e23\u0e37\u0e48\u0e2d\u0e07\u0e21\u0e37\u0e2d\u0e41\u0e25\u0e30\u0e01\u0e32\u0e23\u0e1b\u0e23\u0e30\u0e01\u0e2d\u0e1a\u0e15\u0e32\u0e21 safety standard\n\u0e2b\u0e32\u0e01\u0e1e\u0e1a\u0e02\u0e31\u0e49\u0e19\u0e15\u0e2d\u0e19\u0e17\u0e35\u0e48\u0e44\u0e21\u0e48\u0e15\u0e23\u0e07\u0e01\u0e31\u0e1a WI \u0e23\u0e30\u0e1a\u0e1a\u0e08\u0e30 alarm \u0e40\u0e1e\u0e37\u0e48\u0e2d\u0e41\u0e08\u0e49\u0e07\u0e40\u0e15\u0e37\u0e2d\u0e19\u0e25\u0e33\u0e14\u0e31\u0e1a\u0e02\u0e31\u0e49\u0e19\u0e15\u0e2d\u0e19 \u0e41\u0e25\u0e30\u0e1a\u0e31\u0e19\u0e17\u0e36\u0e01 NOK \u0e25\u0e07 database\n\u0e0a\u0e48\u0e27\u0e22\u0e25\u0e14\u0e40\u0e27\u0e25\u0e32\u0e43\u0e19\u0e01\u0e32\u0e23\u0e1d\u0e36\u0e01\u0e1e\u0e19\u0e31\u0e01\u0e07\u0e32\u0e19\u0e43\u0e2b\u0e21\u0e48\u0e44\u0e14\u0e49\u0e1b\u0e23\u0e30\u0e21\u0e32\u0e13 30 \u0e19\u0e32\u0e17\u0e35 \u0e41\u0e25\u0e30\u0e25\u0e14\u0e15\u0e49\u0e19\u0e17\u0e38\u0e19\u0e40\u0e21\u0e37\u0e48\u0e2d\u0e40\u0e17\u0e35\u0e22\u0e1a\u0e01\u0e31\u0e1a packaged software \u0e08\u0e32\u0e01 supplier \u0e44\u0e14\u0e49\u0e1b\u0e23\u0e30\u0e21\u0e32\u0e13 98.3%"],b8,b8),o,a0)
+o=A.em(a2,a4,a2,a2,a2,a2,a2,a2,a2,a2,a2,a5,"assets/projects/swim.png",a2,a2,a6,a3,a2,a,a2,a2,a1,a2,a2,a2,A.a1(["en","To detect the procedures and steps based on Work Instruction (WI)\nThis project is to detect hands based on sequences, such as picking tools and assembly as safety standard\nIf some steps are found that it doesn't align with the WI, the system will alarm to remind the sequence and save NOK into database\nSave time for training new comer about 30 minutes and Save cost for this solutions with pakaged software from supplier about 98.3%","th","\u0e43\u0e0a\u0e49\u0e2a\u0e33\u0e2b\u0e23\u0e31\u0e1a\u0e15\u0e23\u0e27\u0e08\u0e08\u0e31\u0e1a\u0e02\u0e31\u0e49\u0e19\u0e15\u0e2d\u0e19\u0e01\u0e32\u0e23\u0e17\u0e33\u0e07\u0e32\u0e19\u0e15\u0e32\u0e21 Work Instruction (WI)\n\u0e42\u0e1b\u0e23\u0e40\u0e08\u0e04\u0e19\u0e35\u0e49\u0e43\u0e0a\u0e49\u0e15\u0e23\u0e27\u0e08\u0e08\u0e31\u0e1a\u0e21\u0e37\u0e2d\u0e08\u0e32\u0e01\u0e25\u0e33\u0e14\u0e31\u0e1a\u0e02\u0e31\u0e49\u0e19\u0e15\u0e2d\u0e19 \u0e40\u0e0a\u0e48\u0e19 \u0e01\u0e32\u0e23\u0e2b\u0e22\u0e34\u0e1a\u0e40\u0e04\u0e23\u0e37\u0e48\u0e2d\u0e07\u0e21\u0e37\u0e2d\u0e41\u0e25\u0e30\u0e01\u0e32\u0e23\u0e1b\u0e23\u0e30\u0e01\u0e2d\u0e1a\u0e15\u0e32\u0e21 safety standard\n\u0e2b\u0e32\u0e01\u0e1e\u0e1a\u0e02\u0e31\u0e49\u0e19\u0e15\u0e2d\u0e19\u0e17\u0e35\u0e48\u0e44\u0e21\u0e48\u0e15\u0e23\u0e07\u0e01\u0e31\u0e1a WI \u0e23\u0e30\u0e1a\u0e1a\u0e08\u0e30 alarm \u0e40\u0e1e\u0e37\u0e48\u0e2d\u0e41\u0e08\u0e49\u0e07\u0e40\u0e15\u0e37\u0e2d\u0e19\u0e25\u0e33\u0e14\u0e31\u0e1a\u0e02\u0e31\u0e49\u0e19\u0e15\u0e2d\u0e19 \u0e41\u0e25\u0e30\u0e1a\u0e31\u0e19\u0e17\u0e36\u0e01 NOK \u0e25\u0e07 database\n\u0e0a\u0e48\u0e27\u0e22\u0e25\u0e14\u0e40\u0e27\u0e25\u0e32\u0e43\u0e19\u0e01\u0e32\u0e23\u0e1d\u0e36\u0e01\u0e1e\u0e19\u0e31\u0e01\u0e07\u0e32\u0e19\u0e43\u0e2b\u0e21\u0e48\u0e44\u0e14\u0e49\u0e1b\u0e23\u0e30\u0e21\u0e32\u0e13 30 \u0e19\u0e32\u0e17\u0e35 \u0e41\u0e25\u0e30\u0e25\u0e14\u0e15\u0e49\u0e19\u0e17\u0e38\u0e19\u0e40\u0e21\u0e37\u0e48\u0e2d\u0e40\u0e17\u0e35\u0e22\u0e1a\u0e01\u0e31\u0e1a packaged software \u0e08\u0e32\u0e01 supplier \u0e44\u0e14\u0e49\u0e1b\u0e23\u0e30\u0e21\u0e32\u0e13 98.3%"],b8,b8),o,a0)
 n=A.a1(["en","4M Request","th","\u0e23\u0e30\u0e1a\u0e1a\u0e01\u0e32\u0e23\u0e02\u0e2d\u0e40\u0e1b\u0e25\u0e35\u0e48\u0e22\u0e19\u0e41\u0e1b\u0e25\u0e07 4M"],b8,b8)
-n=A.em(a2,a2,a8,a2,b0,a2,a2,b1,a2,a7,a2,a2,"assets/projects/4mimg.png",a2,a2,a2,"https://drive.google.com/file/d/1HFPBTogvx_zRzzFx66s1jMukUlc1uXaq/view",a9,a,a2,a2,a2,a2,a2,a2,a2,A.a1(["en","Request for machine change\nSend the email notification to sender and people related and Send approvals to manager for each area\nCreate tasks on Planner in channel on MS Teams\nSave records in MS Lists\nvisualize the data on BI cloud","th","Request for machine change\n\u0e43\u0e0a\u0e49\u0e2a\u0e33\u0e2b\u0e23\u0e31\u0e1a\u0e23\u0e49\u0e2d\u0e07\u0e02\u0e2d\u0e01\u0e32\u0e23\u0e40\u0e1b\u0e25\u0e35\u0e48\u0e22\u0e19\u0e41\u0e1b\u0e25\u0e07\u0e40\u0e04\u0e23\u0e37\u0e48\u0e2d\u0e07\u0e08\u0e31\u0e01\u0e23\n\u0e2a\u0e48\u0e07 email notification \u0e44\u0e1b\u0e22\u0e31\u0e07\u0e1c\u0e39\u0e49\u0e23\u0e49\u0e2d\u0e07\u0e02\u0e2d\u0e41\u0e25\u0e30\u0e1c\u0e39\u0e49\u0e17\u0e35\u0e48\u0e40\u0e01\u0e35\u0e48\u0e22\u0e27\u0e02\u0e49\u0e2d\u0e07 \u0e1e\u0e23\u0e49\u0e2d\u0e21\u0e2a\u0e48\u0e07 approval \u0e43\u0e2b\u0e49 manager \u0e02\u0e2d\u0e07\u0e41\u0e15\u0e48\u0e25\u0e30 area\n\u0e2a\u0e23\u0e49\u0e32\u0e07 tasks \u0e1a\u0e19 Planner \u0e20\u0e32\u0e22\u0e43\u0e19 channel \u0e1a\u0e19 MS Teams\n\u0e1a\u0e31\u0e19\u0e17\u0e36\u0e01\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\u0e17\u0e31\u0e49\u0e07\u0e2b\u0e21\u0e14\u0e25\u0e07\u0e43\u0e19 MS Lists\n\u0e41\u0e2a\u0e14\u0e07\u0e1c\u0e25\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\u0e43\u0e19\u0e23\u0e39\u0e1b\u0e41\u0e1a\u0e1a dashboard \u0e1a\u0e19 BI cloud"],b8,b8),n,a2)
+n=A.em(a2,a2,a8,a2,b0,a2,a2,b1,a2,a7,a2,a2,"assets/projects/4mimg.png",a2,a2,a2,"https://drive.google.com/file/d/1HFPBTogvx_zRzzFx66s1jMukUlc1uXaq/view",a9,a,a2,a2,a2,a2,a2,a2,A.a1(["en","Request for machine change\nSend the email notification to sender and people related and Send approvals to manager for each area\nCreate tasks on Planner in channel on MS Teams\nSave records in MS Lists\nvisualize the data on BI cloud","th","Request for machine change\n\u0e43\u0e0a\u0e49\u0e2a\u0e33\u0e2b\u0e23\u0e31\u0e1a\u0e23\u0e49\u0e2d\u0e07\u0e02\u0e2d\u0e01\u0e32\u0e23\u0e40\u0e1b\u0e25\u0e35\u0e48\u0e22\u0e19\u0e41\u0e1b\u0e25\u0e07\u0e40\u0e04\u0e23\u0e37\u0e48\u0e2d\u0e07\u0e08\u0e31\u0e01\u0e23\n\u0e2a\u0e48\u0e07 email notification \u0e44\u0e1b\u0e22\u0e31\u0e07\u0e1c\u0e39\u0e49\u0e23\u0e49\u0e2d\u0e07\u0e02\u0e2d\u0e41\u0e25\u0e30\u0e1c\u0e39\u0e49\u0e17\u0e35\u0e48\u0e40\u0e01\u0e35\u0e48\u0e22\u0e27\u0e02\u0e49\u0e2d\u0e07 \u0e1e\u0e23\u0e49\u0e2d\u0e21\u0e2a\u0e48\u0e07 approval \u0e43\u0e2b\u0e49 manager \u0e02\u0e2d\u0e07\u0e41\u0e15\u0e48\u0e25\u0e30 area\n\u0e2a\u0e23\u0e49\u0e32\u0e07 tasks \u0e1a\u0e19 Planner \u0e20\u0e32\u0e22\u0e43\u0e19 channel \u0e1a\u0e19 MS Teams\n\u0e1a\u0e31\u0e19\u0e17\u0e36\u0e01\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\u0e17\u0e31\u0e49\u0e07\u0e2b\u0e21\u0e14\u0e25\u0e07\u0e43\u0e19 MS Lists\n\u0e41\u0e2a\u0e14\u0e07\u0e1c\u0e25\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\u0e43\u0e19\u0e23\u0e39\u0e1b\u0e41\u0e1a\u0e1a dashboard \u0e1a\u0e19 BI cloud"],b8,b8),n,a2)
 m=A.a1(["en","New Model Request","th","\u0e23\u0e30\u0e1a\u0e1a\u0e01\u0e32\u0e23\u0e02\u0e2d\u0e23\u0e38\u0e48\u0e19\u0e43\u0e2b\u0e21\u0e48"],b8,b8)
-m=A.em(a2,a2,a8,a2,b0,a2,a2,b1,a2,a7,a2,a2,"assets/projects/newmodelimg.png",a2,a2,a2,"https://drive.google.com/file/d/1WVWDtv8pHsJoAaw4AEjQfevLaNIpnv0w/view",a9,a,a2,a2,a2,a2,a2,a2,a2,A.a1(["en","Request for New Model\nSend the email notification to sender and people related\nCreate Excel online on chennel Teams related\nSend approvals to operators related to check to-do lists before confirmation\nSave records for operations and steps or states in MS Lists\nGet data from Excel online and MS Lists to visualize data on BI cloud","th","Request for New Model\n\u0e43\u0e0a\u0e49\u0e2a\u0e33\u0e2b\u0e23\u0e31\u0e1a\u0e23\u0e49\u0e2d\u0e07\u0e02\u0e2d New Model\n\u0e2a\u0e48\u0e07 email notification \u0e44\u0e1b\u0e22\u0e31\u0e07\u0e1c\u0e39\u0e49\u0e23\u0e49\u0e2d\u0e07\u0e02\u0e2d\u0e41\u0e25\u0e30\u0e1c\u0e39\u0e49\u0e17\u0e35\u0e48\u0e40\u0e01\u0e35\u0e48\u0e22\u0e27\u0e02\u0e49\u0e2d\u0e07\n\u0e2a\u0e23\u0e49\u0e32\u0e07 Excel online \u0e1a\u0e19 channel \u0e02\u0e2d\u0e07 Teams \u0e17\u0e35\u0e48\u0e40\u0e01\u0e35\u0e48\u0e22\u0e27\u0e02\u0e49\u0e2d\u0e07\n\u0e2a\u0e48\u0e07 approval \u0e44\u0e1b\u0e22\u0e31\u0e07 operator \u0e17\u0e35\u0e48\u0e40\u0e01\u0e35\u0e48\u0e22\u0e27\u0e02\u0e49\u0e2d\u0e07\u0e40\u0e1e\u0e37\u0e48\u0e2d\u0e15\u0e23\u0e27\u0e08\u0e2a\u0e2d\u0e1a to-do lists \u0e01\u0e48\u0e2d\u0e19\u0e17\u0e33\u0e01\u0e32\u0e23\u0e22\u0e37\u0e19\u0e22\u0e31\u0e19\n\u0e1a\u0e31\u0e19\u0e17\u0e36\u0e01\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\u0e02\u0e31\u0e49\u0e19\u0e15\u0e2d\u0e19\u0e01\u0e32\u0e23\u0e17\u0e33\u0e07\u0e32\u0e19\u0e41\u0e25\u0e30\u0e2a\u0e16\u0e32\u0e19\u0e30\u0e25\u0e07\u0e43\u0e19 MS Lists\n\u0e14\u0e36\u0e07\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\u0e08\u0e32\u0e01 Excel online \u0e41\u0e25\u0e30 MS Lists \u0e21\u0e32\u0e41\u0e2a\u0e14\u0e07\u0e1c\u0e25\u0e1a\u0e19 BI cloud"],b8,b8),m,a2)
+m=A.em(a2,a2,a8,a2,b0,a2,a2,b1,a2,a7,a2,a2,"assets/projects/newmodelimg.png",a2,a2,a2,"https://drive.google.com/file/d/1WVWDtv8pHsJoAaw4AEjQfevLaNIpnv0w/view",a9,a,a2,a2,a2,a2,a2,a2,A.a1(["en","Request for New Model\nSend the email notification to sender and people related\nCreate Excel online on chennel Teams related\nSend approvals to operators related to check to-do lists before confirmation\nSave records for operations and steps or states in MS Lists\nGet data from Excel online and MS Lists to visualize data on BI cloud","th","Request for New Model\n\u0e43\u0e0a\u0e49\u0e2a\u0e33\u0e2b\u0e23\u0e31\u0e1a\u0e23\u0e49\u0e2d\u0e07\u0e02\u0e2d New Model\n\u0e2a\u0e48\u0e07 email notification \u0e44\u0e1b\u0e22\u0e31\u0e07\u0e1c\u0e39\u0e49\u0e23\u0e49\u0e2d\u0e07\u0e02\u0e2d\u0e41\u0e25\u0e30\u0e1c\u0e39\u0e49\u0e17\u0e35\u0e48\u0e40\u0e01\u0e35\u0e48\u0e22\u0e27\u0e02\u0e49\u0e2d\u0e07\n\u0e2a\u0e23\u0e49\u0e32\u0e07 Excel online \u0e1a\u0e19 channel \u0e02\u0e2d\u0e07 Teams \u0e17\u0e35\u0e48\u0e40\u0e01\u0e35\u0e48\u0e22\u0e27\u0e02\u0e49\u0e2d\u0e07\n\u0e2a\u0e48\u0e07 approval \u0e44\u0e1b\u0e22\u0e31\u0e07 operator \u0e17\u0e35\u0e48\u0e40\u0e01\u0e35\u0e48\u0e22\u0e27\u0e02\u0e49\u0e2d\u0e07\u0e40\u0e1e\u0e37\u0e48\u0e2d\u0e15\u0e23\u0e27\u0e08\u0e2a\u0e2d\u0e1a to-do lists \u0e01\u0e48\u0e2d\u0e19\u0e17\u0e33\u0e01\u0e32\u0e23\u0e22\u0e37\u0e19\u0e22\u0e31\u0e19\n\u0e1a\u0e31\u0e19\u0e17\u0e36\u0e01\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\u0e02\u0e31\u0e49\u0e19\u0e15\u0e2d\u0e19\u0e01\u0e32\u0e23\u0e17\u0e33\u0e07\u0e32\u0e19\u0e41\u0e25\u0e30\u0e2a\u0e16\u0e32\u0e19\u0e30\u0e25\u0e07\u0e43\u0e19 MS Lists\n\u0e14\u0e36\u0e07\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\u0e08\u0e32\u0e01 Excel online \u0e41\u0e25\u0e30 MS Lists \u0e21\u0e32\u0e41\u0e2a\u0e14\u0e07\u0e1c\u0e25\u0e1a\u0e19 BI cloud"],b8,b8),m,a2)
 l=A.a1(["en","Electronic Document Action Request (EDAR)","th","\u0e23\u0e30\u0e1a\u0e1a\u0e04\u0e33\u0e02\u0e2d\u0e14\u0e33\u0e40\u0e19\u0e34\u0e19\u0e01\u0e32\u0e23\u0e40\u0e2d\u0e01\u0e2a\u0e32\u0e23\u0e2d\u0e34\u0e40\u0e25\u0e47\u0e01\u0e17\u0e23\u0e2d\u0e19\u0e34\u0e01\u0e2a\u0e4c (EDAR)"],b8,b8)
-l=A.em(a2,a2,a8,a2,a2,a2,a2,b1,a2,a7,a2,a2,"assets/projects/edarimg.png",a2,a2,a2,"https://drive.google.com/file/d/1zkHO10Qzsc9GRg1xB_e_8bGFicb6MczT/view",a9,a,a2,a2,a2,a2,a2,a2,a2,A.a1(["en","To improve data management and document\nRuduce steps for approval process and registration\nRegister with MS Forms instead\nDirectly send approval email to approvers with approval button instead of digital sign\nUsers can check datetime and revise approvers or the number of approvers\nRecord the data as history including version calculation and expired date of document for notification before 3 days and continue every day until the document updated\nThe system will calcucate the expired date by next 35 years before it will be deleted","th","\u0e40\u0e1e\u0e37\u0e48\u0e2d\u0e1b\u0e23\u0e31\u0e1a\u0e1b\u0e23\u0e38\u0e07\u0e01\u0e32\u0e23\u0e08\u0e31\u0e14\u0e01\u0e32\u0e23\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\u0e41\u0e25\u0e30\u0e40\u0e2d\u0e01\u0e2a\u0e32\u0e23\u0e43\u0e2b\u0e49\u0e21\u0e35\u0e1b\u0e23\u0e30\u0e2a\u0e34\u0e17\u0e18\u0e34\u0e20\u0e32\u0e1e\u0e21\u0e32\u0e01\u0e02\u0e36\u0e49\u0e19\n\u0e25\u0e14\u0e02\u0e31\u0e49\u0e19\u0e15\u0e2d\u0e19\u0e43\u0e19\u0e01\u0e23\u0e30\u0e1a\u0e27\u0e19\u0e01\u0e32\u0e23\u0e2d\u0e19\u0e38\u0e21\u0e31\u0e15\u0e34\u0e41\u0e25\u0e30\u0e01\u0e32\u0e23\u0e25\u0e07\u0e17\u0e30\u0e40\u0e1a\u0e35\u0e22\u0e19\u0e40\u0e2d\u0e01\u0e2a\u0e32\u0e23\n\u0e40\u0e1b\u0e25\u0e35\u0e48\u0e22\u0e19\u0e21\u0e32\u0e43\u0e0a\u0e49\u0e01\u0e32\u0e23\u0e25\u0e07\u0e17\u0e30\u0e40\u0e1a\u0e35\u0e22\u0e19\u0e1c\u0e48\u0e32\u0e19 MS Forms \u0e41\u0e17\u0e19\n\u0e2a\u0e48\u0e07\u0e2d\u0e35\u0e40\u0e21\u0e25\u0e02\u0e2d\u0e2d\u0e19\u0e38\u0e21\u0e31\u0e15\u0e34\u0e42\u0e14\u0e22\u0e15\u0e23\u0e07\u0e44\u0e1b\u0e22\u0e31\u0e07\u0e1c\u0e39\u0e49\u0e2d\u0e19\u0e38\u0e21\u0e31\u0e15\u0e34 \u0e1e\u0e23\u0e49\u0e2d\u0e21\u0e1b\u0e38\u0e48\u0e21\u0e01\u0e14\u0e2d\u0e19\u0e38\u0e21\u0e31\u0e15\u0e34 \u0e41\u0e17\u0e19\u0e01\u0e32\u0e23\u0e25\u0e07\u0e19\u0e32\u0e21\u0e41\u0e1a\u0e1a\u0e14\u0e34\u0e08\u0e34\u0e17\u0e31\u0e25\n\u0e1c\u0e39\u0e49\u0e43\u0e0a\u0e49\u0e07\u0e32\u0e19\u0e2a\u0e32\u0e21\u0e32\u0e23\u0e16\u0e15\u0e23\u0e27\u0e08\u0e2a\u0e2d\u0e1a\u0e27\u0e31\u0e19\u0e17\u0e35\u0e48\u0e41\u0e25\u0e30\u0e40\u0e27\u0e25\u0e32 \u0e23\u0e27\u0e21\u0e16\u0e36\u0e07\u0e41\u0e01\u0e49\u0e44\u0e02\u0e23\u0e32\u0e22\u0e0a\u0e37\u0e48\u0e2d\u0e2b\u0e23\u0e37\u0e2d\u0e08\u0e33\u0e19\u0e27\u0e19\u0e1c\u0e39\u0e49\u0e2d\u0e19\u0e38\u0e21\u0e31\u0e15\u0e34\u0e44\u0e14\u0e49\n\u0e1a\u0e31\u0e19\u0e17\u0e36\u0e01\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\u0e40\u0e1b\u0e47\u0e19\u0e1b\u0e23\u0e30\u0e27\u0e31\u0e15\u0e34\u0e22\u0e49\u0e2d\u0e19\u0e2b\u0e25\u0e31\u0e07 \u0e23\u0e27\u0e21\u0e16\u0e36\u0e07\u0e01\u0e32\u0e23\u0e04\u0e33\u0e19\u0e27\u0e13\u0e40\u0e27\u0e2d\u0e23\u0e4c\u0e0a\u0e31\u0e19\u0e40\u0e2d\u0e01\u0e2a\u0e32\u0e23\u0e41\u0e25\u0e30\u0e27\u0e31\u0e19\u0e2b\u0e21\u0e14\u0e2d\u0e32\u0e22\u0e38 \u0e42\u0e14\u0e22\u0e23\u0e30\u0e1a\u0e1a\u0e08\u0e30\u0e41\u0e08\u0e49\u0e07\u0e40\u0e15\u0e37\u0e2d\u0e19\u0e25\u0e48\u0e27\u0e07\u0e2b\u0e19\u0e49\u0e32 3 \u0e27\u0e31\u0e19 \u0e41\u0e25\u0e30\u0e41\u0e08\u0e49\u0e07\u0e40\u0e15\u0e37\u0e2d\u0e19\u0e17\u0e38\u0e01\u0e27\u0e31\u0e19\u0e08\u0e19\u0e01\u0e27\u0e48\u0e32\u0e08\u0e30\u0e21\u0e35\u0e01\u0e32\u0e23\u0e2d\u0e31\u0e1b\u0e40\u0e14\u0e15\u0e40\u0e2d\u0e01\u0e2a\u0e32\u0e23\n\u0e23\u0e30\u0e1a\u0e1a\u0e08\u0e30\u0e04\u0e33\u0e19\u0e27\u0e13\u0e27\u0e31\u0e19\u0e2b\u0e21\u0e14\u0e2d\u0e32\u0e22\u0e38\u0e02\u0e2d\u0e07\u0e40\u0e2d\u0e01\u0e2a\u0e32\u0e23\u0e25\u0e48\u0e27\u0e07\u0e2b\u0e19\u0e49\u0e32 35 \u0e1b\u0e35 \u0e01\u0e48\u0e2d\u0e19\u0e17\u0e35\u0e48\u0e08\u0e30\u0e17\u0e33\u0e01\u0e32\u0e23\u0e25\u0e1a\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25"],b8,b8),l,a2)
+l=A.em(a2,a2,a8,a2,a2,a2,a2,b1,a2,a7,a2,a2,"assets/projects/edarimg.png",a2,a2,a2,"https://drive.google.com/file/d/1zkHO10Qzsc9GRg1xB_e_8bGFicb6MczT/view",a9,a,a2,a2,a2,a2,a2,a2,A.a1(["en","To improve data management and document\nRuduce steps for approval process and registration\nRegister with MS Forms instead\nDirectly send approval email to approvers with approval button instead of digital sign\nUsers can check datetime and revise approvers or the number of approvers\nRecord the data as history including version calculation and expired date of document for notification before 3 days and continue every day until the document updated\nThe system will calcucate the expired date by next 35 years before it will be deleted","th","\u0e40\u0e1e\u0e37\u0e48\u0e2d\u0e1b\u0e23\u0e31\u0e1a\u0e1b\u0e23\u0e38\u0e07\u0e01\u0e32\u0e23\u0e08\u0e31\u0e14\u0e01\u0e32\u0e23\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\u0e41\u0e25\u0e30\u0e40\u0e2d\u0e01\u0e2a\u0e32\u0e23\u0e43\u0e2b\u0e49\u0e21\u0e35\u0e1b\u0e23\u0e30\u0e2a\u0e34\u0e17\u0e18\u0e34\u0e20\u0e32\u0e1e\u0e21\u0e32\u0e01\u0e02\u0e36\u0e49\u0e19\n\u0e25\u0e14\u0e02\u0e31\u0e49\u0e19\u0e15\u0e2d\u0e19\u0e43\u0e19\u0e01\u0e23\u0e30\u0e1a\u0e27\u0e19\u0e01\u0e32\u0e23\u0e2d\u0e19\u0e38\u0e21\u0e31\u0e15\u0e34\u0e41\u0e25\u0e30\u0e01\u0e32\u0e23\u0e25\u0e07\u0e17\u0e30\u0e40\u0e1a\u0e35\u0e22\u0e19\u0e40\u0e2d\u0e01\u0e2a\u0e32\u0e23\n\u0e40\u0e1b\u0e25\u0e35\u0e48\u0e22\u0e19\u0e21\u0e32\u0e43\u0e0a\u0e49\u0e01\u0e32\u0e23\u0e25\u0e07\u0e17\u0e30\u0e40\u0e1a\u0e35\u0e22\u0e19\u0e1c\u0e48\u0e32\u0e19 MS Forms \u0e41\u0e17\u0e19\n\u0e2a\u0e48\u0e07\u0e2d\u0e35\u0e40\u0e21\u0e25\u0e02\u0e2d\u0e2d\u0e19\u0e38\u0e21\u0e31\u0e15\u0e34\u0e42\u0e14\u0e22\u0e15\u0e23\u0e07\u0e44\u0e1b\u0e22\u0e31\u0e07\u0e1c\u0e39\u0e49\u0e2d\u0e19\u0e38\u0e21\u0e31\u0e15\u0e34 \u0e1e\u0e23\u0e49\u0e2d\u0e21\u0e1b\u0e38\u0e48\u0e21\u0e01\u0e14\u0e2d\u0e19\u0e38\u0e21\u0e31\u0e15\u0e34 \u0e41\u0e17\u0e19\u0e01\u0e32\u0e23\u0e25\u0e07\u0e19\u0e32\u0e21\u0e41\u0e1a\u0e1a\u0e14\u0e34\u0e08\u0e34\u0e17\u0e31\u0e25\n\u0e1c\u0e39\u0e49\u0e43\u0e0a\u0e49\u0e07\u0e32\u0e19\u0e2a\u0e32\u0e21\u0e32\u0e23\u0e16\u0e15\u0e23\u0e27\u0e08\u0e2a\u0e2d\u0e1a\u0e27\u0e31\u0e19\u0e17\u0e35\u0e48\u0e41\u0e25\u0e30\u0e40\u0e27\u0e25\u0e32 \u0e23\u0e27\u0e21\u0e16\u0e36\u0e07\u0e41\u0e01\u0e49\u0e44\u0e02\u0e23\u0e32\u0e22\u0e0a\u0e37\u0e48\u0e2d\u0e2b\u0e23\u0e37\u0e2d\u0e08\u0e33\u0e19\u0e27\u0e19\u0e1c\u0e39\u0e49\u0e2d\u0e19\u0e38\u0e21\u0e31\u0e15\u0e34\u0e44\u0e14\u0e49\n\u0e1a\u0e31\u0e19\u0e17\u0e36\u0e01\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\u0e40\u0e1b\u0e47\u0e19\u0e1b\u0e23\u0e30\u0e27\u0e31\u0e15\u0e34\u0e22\u0e49\u0e2d\u0e19\u0e2b\u0e25\u0e31\u0e07 \u0e23\u0e27\u0e21\u0e16\u0e36\u0e07\u0e01\u0e32\u0e23\u0e04\u0e33\u0e19\u0e27\u0e13\u0e40\u0e27\u0e2d\u0e23\u0e4c\u0e0a\u0e31\u0e19\u0e40\u0e2d\u0e01\u0e2a\u0e32\u0e23\u0e41\u0e25\u0e30\u0e27\u0e31\u0e19\u0e2b\u0e21\u0e14\u0e2d\u0e32\u0e22\u0e38 \u0e42\u0e14\u0e22\u0e23\u0e30\u0e1a\u0e1a\u0e08\u0e30\u0e41\u0e08\u0e49\u0e07\u0e40\u0e15\u0e37\u0e2d\u0e19\u0e25\u0e48\u0e27\u0e07\u0e2b\u0e19\u0e49\u0e32 3 \u0e27\u0e31\u0e19 \u0e41\u0e25\u0e30\u0e41\u0e08\u0e49\u0e07\u0e40\u0e15\u0e37\u0e2d\u0e19\u0e17\u0e38\u0e01\u0e27\u0e31\u0e19\u0e08\u0e19\u0e01\u0e27\u0e48\u0e32\u0e08\u0e30\u0e21\u0e35\u0e01\u0e32\u0e23\u0e2d\u0e31\u0e1b\u0e40\u0e14\u0e15\u0e40\u0e2d\u0e01\u0e2a\u0e32\u0e23\n\u0e23\u0e30\u0e1a\u0e1a\u0e08\u0e30\u0e04\u0e33\u0e19\u0e27\u0e13\u0e27\u0e31\u0e19\u0e2b\u0e21\u0e14\u0e2d\u0e32\u0e22\u0e38\u0e02\u0e2d\u0e07\u0e40\u0e2d\u0e01\u0e2a\u0e32\u0e23\u0e25\u0e48\u0e27\u0e07\u0e2b\u0e19\u0e49\u0e32 35 \u0e1b\u0e35 \u0e01\u0e48\u0e2d\u0e19\u0e17\u0e35\u0e48\u0e08\u0e30\u0e17\u0e33\u0e01\u0e32\u0e23\u0e25\u0e1a\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25"],b8,b8),l,a2)
 k=A.a1(["en","Traceability System","th","\u0e23\u0e30\u0e1a\u0e1a\u0e01\u0e32\u0e23\u0e15\u0e23\u0e27\u0e08\u0e2a\u0e2d\u0e1a\u0e22\u0e49\u0e2d\u0e19\u0e01\u0e25\u0e31\u0e1a (Traceability)"],b8,b8)
-k=A.em(b4,a2,a8,b3,b0,a2,"assets/images/databrick.png",b1,a2,a2,a2,a2,"assets/projects/traceimg.png",a2,b2,a2,"https://drive.google.com/file/d/1EllW3c2XKYmsUw2TxvFoKL13VFEgSH6o/view",a9,a,a2,a2,a2,"assets/images/spark.png",a2,a2,a2,A.a1(["en","Scan barcodes on Kanban to automatically fil in details\nClick the button on App to confirm the details\nsave data to MS Lists to easily track and follow up the data for customer claim\nCan delete the record on App","th","\u0e2a\u0e41\u0e01\u0e19\u0e1a\u0e32\u0e23\u0e4c\u0e42\u0e04\u0e49\u0e14\u0e1a\u0e19 Kanban \u0e40\u0e1e\u0e37\u0e48\u0e2d\u0e01\u0e23\u0e2d\u0e01\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\u0e2d\u0e31\u0e15\u0e42\u0e19\u0e21\u0e31\u0e15\u0e34\n\u0e22\u0e37\u0e19\u0e22\u0e31\u0e19\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\u0e1c\u0e48\u0e32\u0e19\u0e1b\u0e38\u0e48\u0e21\u0e1a\u0e19\u0e41\u0e2d\u0e1b\u0e1e\u0e25\u0e34\u0e40\u0e04\u0e0a\u0e31\u0e19\n\u0e1a\u0e31\u0e19\u0e17\u0e36\u0e01\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\u0e25\u0e07\u0e43\u0e19 MS Lists \u0e40\u0e1e\u0e37\u0e48\u0e2d\u0e43\u0e2b\u0e49\u0e07\u0e48\u0e32\u0e22\u0e15\u0e48\u0e2d\u0e01\u0e32\u0e23\u0e15\u0e34\u0e14\u0e15\u0e32\u0e21\u0e41\u0e25\u0e30\u0e43\u0e0a\u0e49\u0e2a\u0e33\u0e2b\u0e23\u0e31\u0e1a\u0e01\u0e32\u0e23\u0e40\u0e04\u0e25\u0e21\u0e02\u0e2d\u0e07\u0e25\u0e39\u0e01\u0e04\u0e49\u0e32\n\u0e2a\u0e32\u0e21\u0e32\u0e23\u0e16\u0e25\u0e1a\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\u0e1c\u0e48\u0e32\u0e19\u0e41\u0e2d\u0e1b\u0e1e\u0e25\u0e34\u0e40\u0e04\u0e0a\u0e31\u0e19\u0e44\u0e14\u0e49"],b8,b8),k,a2)
+k=A.em(b4,a2,a8,b3,b0,a2,"assets/images/databrick.png",b1,a2,a2,a2,a2,"assets/projects/traceimg.png",a2,b2,a2,"https://drive.google.com/file/d/1EllW3c2XKYmsUw2TxvFoKL13VFEgSH6o/view",a9,a,a2,a2,a1,a2,a2,a2,A.a1(["en","Scan barcodes on Kanban to automatically fil in details\nClick the button on App to confirm the details\nsave data to MS Lists to easily track and follow up the data for customer claim\nCan delete the record on App","th","\u0e2a\u0e41\u0e01\u0e19\u0e1a\u0e32\u0e23\u0e4c\u0e42\u0e04\u0e49\u0e14\u0e1a\u0e19 Kanban \u0e40\u0e1e\u0e37\u0e48\u0e2d\u0e01\u0e23\u0e2d\u0e01\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\u0e2d\u0e31\u0e15\u0e42\u0e19\u0e21\u0e31\u0e15\u0e34\n\u0e22\u0e37\u0e19\u0e22\u0e31\u0e19\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\u0e1c\u0e48\u0e32\u0e19\u0e1b\u0e38\u0e48\u0e21\u0e1a\u0e19\u0e41\u0e2d\u0e1b\u0e1e\u0e25\u0e34\u0e40\u0e04\u0e0a\u0e31\u0e19\n\u0e1a\u0e31\u0e19\u0e17\u0e36\u0e01\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\u0e25\u0e07\u0e43\u0e19 MS Lists \u0e40\u0e1e\u0e37\u0e48\u0e2d\u0e43\u0e2b\u0e49\u0e07\u0e48\u0e32\u0e22\u0e15\u0e48\u0e2d\u0e01\u0e32\u0e23\u0e15\u0e34\u0e14\u0e15\u0e32\u0e21\u0e41\u0e25\u0e30\u0e43\u0e0a\u0e49\u0e2a\u0e33\u0e2b\u0e23\u0e31\u0e1a\u0e01\u0e32\u0e23\u0e40\u0e04\u0e25\u0e21\u0e02\u0e2d\u0e07\u0e25\u0e39\u0e01\u0e04\u0e49\u0e32\n\u0e2a\u0e32\u0e21\u0e32\u0e23\u0e16\u0e25\u0e1a\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\u0e1c\u0e48\u0e32\u0e19\u0e41\u0e2d\u0e1b\u0e1e\u0e25\u0e34\u0e40\u0e04\u0e0a\u0e31\u0e19\u0e44\u0e14\u0e49"],b8,b8),k,a2)
 j=A.a1(["en","Investment Purchasing Order Request","th","\u0e04\u0e33\u0e02\u0e2d\u0e43\u0e1a\u0e2a\u0e31\u0e48\u0e07\u0e0b\u0e37\u0e49\u0e2d\u0e01\u0e32\u0e23\u0e25\u0e07\u0e17\u0e38\u0e19"],b8,b8)
-j=A.em(a2,a2,a8,a2,a2,a2,a2,b1,a2,a7,a2,a2,"assets/projects/po.png",a2,a2,a2,"https://drive.google.com/file/d/1oWFh6KLUdKVVsFIMstLe5UeqRamZwseE/view",a9,a,a2,a2,a2,a2,a2,a2,a2,A.a1(["en","Request Purchasing Order (PO) with attachment via MS Forms\nSend the email notification to sender and people related and send approvals to people related\nCreate tasks with attachment on Planner via MS Teams\nAutomatically remove the task when the PO request is rejected\nAutomatically complete the task when the PO request is approved\nSave data with attachment to MS Lists","th","Request Purchasing Order (PO) \u0e1e\u0e23\u0e49\u0e2d\u0e21\u0e41\u0e19\u0e1a\u0e44\u0e1f\u0e25\u0e4c\u0e1c\u0e48\u0e32\u0e19 MS Forms\n\u0e2a\u0e48\u0e07 email notification \u0e44\u0e1b\u0e22\u0e31\u0e07\u0e1c\u0e39\u0e49\u0e23\u0e49\u0e2d\u0e07\u0e02\u0e2d\u0e41\u0e25\u0e30\u0e1c\u0e39\u0e49\u0e17\u0e35\u0e48\u0e40\u0e01\u0e35\u0e48\u0e22\u0e27\u0e02\u0e49\u0e2d\u0e07 \u0e1e\u0e23\u0e49\u0e2d\u0e21\u0e2a\u0e48\u0e07 approval \u0e43\u0e2b\u0e49\u0e1c\u0e39\u0e49\u0e17\u0e35\u0e48\u0e40\u0e01\u0e35\u0e48\u0e22\u0e27\u0e02\u0e49\u0e2d\u0e07\n\u0e2a\u0e23\u0e49\u0e32\u0e07 tasks \u0e1e\u0e23\u0e49\u0e2d\u0e21\u0e44\u0e1f\u0e25\u0e4c\u0e41\u0e19\u0e1a\u0e1a\u0e19 Planner \u0e1c\u0e48\u0e32\u0e19 MS Teams\n\u0e25\u0e1a task \u0e2d\u0e31\u0e15\u0e42\u0e19\u0e21\u0e31\u0e15\u0e34\u0e40\u0e21\u0e37\u0e48\u0e2d PO request \u0e16\u0e39\u0e01 reject\n\u0e1b\u0e34\u0e14 task \u0e2d\u0e31\u0e15\u0e42\u0e19\u0e21\u0e31\u0e15\u0e34\u0e40\u0e21\u0e37\u0e48\u0e2d PO request \u0e44\u0e14\u0e49\u0e23\u0e31\u0e1a approval\n\u0e1a\u0e31\u0e19\u0e17\u0e36\u0e01\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\u0e1e\u0e23\u0e49\u0e2d\u0e21\u0e44\u0e1f\u0e25\u0e4c\u0e41\u0e19\u0e1a\u0e25\u0e07\u0e43\u0e19 MS Lists"],b8,b8),j,a2)
+j=A.em(a2,a2,a8,a2,a2,a2,a2,b1,a2,a7,a2,a2,"assets/projects/po.png",a2,a2,a2,"https://drive.google.com/file/d/1oWFh6KLUdKVVsFIMstLe5UeqRamZwseE/view",a9,a,a2,a2,a2,a2,a2,a2,A.a1(["en","Request Purchasing Order (PO) with attachment via MS Forms\nSend the email notification to sender and people related and send approvals to people related\nCreate tasks with attachment on Planner via MS Teams\nAutomatically remove the task when the PO request is rejected\nAutomatically complete the task when the PO request is approved\nSave data with attachment to MS Lists","th","Request Purchasing Order (PO) \u0e1e\u0e23\u0e49\u0e2d\u0e21\u0e41\u0e19\u0e1a\u0e44\u0e1f\u0e25\u0e4c\u0e1c\u0e48\u0e32\u0e19 MS Forms\n\u0e2a\u0e48\u0e07 email notification \u0e44\u0e1b\u0e22\u0e31\u0e07\u0e1c\u0e39\u0e49\u0e23\u0e49\u0e2d\u0e07\u0e02\u0e2d\u0e41\u0e25\u0e30\u0e1c\u0e39\u0e49\u0e17\u0e35\u0e48\u0e40\u0e01\u0e35\u0e48\u0e22\u0e27\u0e02\u0e49\u0e2d\u0e07 \u0e1e\u0e23\u0e49\u0e2d\u0e21\u0e2a\u0e48\u0e07 approval \u0e43\u0e2b\u0e49\u0e1c\u0e39\u0e49\u0e17\u0e35\u0e48\u0e40\u0e01\u0e35\u0e48\u0e22\u0e27\u0e02\u0e49\u0e2d\u0e07\n\u0e2a\u0e23\u0e49\u0e32\u0e07 tasks \u0e1e\u0e23\u0e49\u0e2d\u0e21\u0e44\u0e1f\u0e25\u0e4c\u0e41\u0e19\u0e1a\u0e1a\u0e19 Planner \u0e1c\u0e48\u0e32\u0e19 MS Teams\n\u0e25\u0e1a task \u0e2d\u0e31\u0e15\u0e42\u0e19\u0e21\u0e31\u0e15\u0e34\u0e40\u0e21\u0e37\u0e48\u0e2d PO request \u0e16\u0e39\u0e01 reject\n\u0e1b\u0e34\u0e14 task \u0e2d\u0e31\u0e15\u0e42\u0e19\u0e21\u0e31\u0e15\u0e34\u0e40\u0e21\u0e37\u0e48\u0e2d PO request \u0e44\u0e14\u0e49\u0e23\u0e31\u0e1a approval\n\u0e1a\u0e31\u0e19\u0e17\u0e36\u0e01\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\u0e1e\u0e23\u0e49\u0e2d\u0e21\u0e44\u0e1f\u0e25\u0e4c\u0e41\u0e19\u0e1a\u0e25\u0e07\u0e43\u0e19 MS Lists"],b8,b8),j,a2)
 i=A.a1(["en","Pin Check Data Live Dashboard","th","\u0e41\u0e14\u0e0a\u0e1a\u0e2d\u0e23\u0e4c\u0e14\u0e15\u0e23\u0e27\u0e08\u0e2a\u0e2d\u0e1a\u0e04\u0e27\u0e32\u0e21\u0e2a\u0e39\u0e07\u0e1e\u0e34\u0e19"],b8,b8)
-i=A.em(a2,a2,a2,b3,b0,a2,a2,b1,a2,a2,a2,a2,"assets/projects/pinimg.png",a2,b2,a2,"https://drive.google.com/file/d/1qke7tPHfx_bP2_rFxWVjYdGOaborSvMn/view",a9,a,a2,a2,a2,a2,b5,a2,"assets/images/streamanalytics.png",A.a1(["en","To check and remind pin height\nImprove data management and visualize data\nStreaming data via Streaing Analytics from Event Hub (Streaming Self Service) to Power BI\nUpdate or refresh Power BI in real-time every day and durations time is 30 minutes","th","\u0e43\u0e0a\u0e49\u0e2a\u0e33\u0e2b\u0e23\u0e31\u0e1a\u0e15\u0e23\u0e27\u0e08\u0e2a\u0e2d\u0e1a\u0e41\u0e25\u0e30\u0e41\u0e08\u0e49\u0e07\u0e40\u0e15\u0e37\u0e2d\u0e19\u0e04\u0e27\u0e32\u0e21\u0e2a\u0e39\u0e07\u0e02\u0e2d\u0e07 pin\n\u0e0a\u0e48\u0e27\u0e22\u0e1b\u0e23\u0e31\u0e1a\u0e1b\u0e23\u0e38\u0e07\u0e01\u0e32\u0e23\u0e08\u0e31\u0e14\u0e01\u0e32\u0e23\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\u0e41\u0e25\u0e30\u0e01\u0e32\u0e23\u0e41\u0e2a\u0e14\u0e07\u0e1c\u0e25\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\n\u0e2a\u0e48\u0e07\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\u0e41\u0e1a\u0e1a streaming \u0e1c\u0e48\u0e32\u0e19 Streaming Analytics \u0e08\u0e32\u0e01 Event Hub (Streaming Self Service) \u0e44\u0e1b\u0e22\u0e31\u0e07 Power BI\n\u0e2d\u0e31\u0e1b\u0e40\u0e14\u0e15\u0e2b\u0e23\u0e37\u0e2d refresh Power BI \u0e41\u0e1a\u0e1a real-time \u0e17\u0e38\u0e01\u0e27\u0e31\u0e19 \u0e42\u0e14\u0e22\u0e21\u0e35\u0e0a\u0e48\u0e27\u0e07\u0e40\u0e27\u0e25\u0e32 30 \u0e19\u0e32\u0e17\u0e35"],b8,b8),i,a2)
+i=A.em(a2,a2,a2,b3,b0,a2,a2,b1,a2,a2,a2,a2,"assets/projects/pinimg.png",a2,b2,a2,"https://drive.google.com/file/d/1qke7tPHfx_bP2_rFxWVjYdGOaborSvMn/view",a9,a,a2,a2,a2,b5,a2,"assets/images/streamanalytics.png",A.a1(["en","To check and remind pin height\nImprove data management and visualize data\nStreaming data via Streaing Analytics from Event Hub (Streaming Self Service) to Power BI\nUpdate or refresh Power BI in real-time every day and durations time is 30 minutes","th","\u0e43\u0e0a\u0e49\u0e2a\u0e33\u0e2b\u0e23\u0e31\u0e1a\u0e15\u0e23\u0e27\u0e08\u0e2a\u0e2d\u0e1a\u0e41\u0e25\u0e30\u0e41\u0e08\u0e49\u0e07\u0e40\u0e15\u0e37\u0e2d\u0e19\u0e04\u0e27\u0e32\u0e21\u0e2a\u0e39\u0e07\u0e02\u0e2d\u0e07 pin\n\u0e0a\u0e48\u0e27\u0e22\u0e1b\u0e23\u0e31\u0e1a\u0e1b\u0e23\u0e38\u0e07\u0e01\u0e32\u0e23\u0e08\u0e31\u0e14\u0e01\u0e32\u0e23\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\u0e41\u0e25\u0e30\u0e01\u0e32\u0e23\u0e41\u0e2a\u0e14\u0e07\u0e1c\u0e25\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\n\u0e2a\u0e48\u0e07\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\u0e41\u0e1a\u0e1a streaming \u0e1c\u0e48\u0e32\u0e19 Streaming Analytics \u0e08\u0e32\u0e01 Event Hub (Streaming Self Service) \u0e44\u0e1b\u0e22\u0e31\u0e07 Power BI\n\u0e2d\u0e31\u0e1b\u0e40\u0e14\u0e15\u0e2b\u0e23\u0e37\u0e2d refresh Power BI \u0e41\u0e1a\u0e1a real-time \u0e17\u0e38\u0e01\u0e27\u0e31\u0e19 \u0e42\u0e14\u0e22\u0e21\u0e35\u0e0a\u0e48\u0e27\u0e07\u0e40\u0e27\u0e25\u0e32 30 \u0e19\u0e32\u0e17\u0e35"],b8,b8),i,a2)
 h=A.a1(["en","Work Efficency Reporting in Business Intelligence (WERBI)","th","\u0e23\u0e30\u0e1a\u0e1a\u0e23\u0e32\u0e22\u0e07\u0e32\u0e19\u0e1b\u0e23\u0e30\u0e2a\u0e34\u0e17\u0e18\u0e34\u0e20\u0e32\u0e1e\u0e01\u0e32\u0e23\u0e17\u0e33\u0e07\u0e32\u0e19\u0e14\u0e49\u0e27\u0e22 Business Intelligence (WERBI)"],b8,b8)
-h=A.em(a2,a2,a2,a2,a2,a2,a2,a2,a2,a2,a2,a2,"assets/projects/werbiimg.png",a2,a2,a2,"https://drive.google.com/file/d/1dZuXn5gWM3L82AATv1ot1dpK6V_vgPlG/view",a2,a,a2,a2,a1,a2,a2,a2,a2,A.a1(["en","To calculate working hours, OT, attandance time from the access data of face-recognition system\nTo reduce manual effort of officers who need to use the attendance data such as production managers at all levels, from leader to monitoring productivity in production","th","\u0e40\u0e1e\u0e37\u0e48\u0e2d\u0e04\u0e33\u0e19\u0e27\u0e13\u0e0a\u0e31\u0e48\u0e27\u0e42\u0e21\u0e07\u0e01\u0e32\u0e23\u0e17\u0e33\u0e07\u0e32\u0e19 \u0e0a\u0e31\u0e48\u0e27\u0e42\u0e21\u0e07 OT \u0e41\u0e25\u0e30\u0e40\u0e27\u0e25\u0e32\u0e40\u0e02\u0e49\u0e32\u0e07\u0e32\u0e19 \u0e08\u0e32\u0e01\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\u0e01\u0e32\u0e23\u0e40\u0e02\u0e49\u0e32\u0e2d\u0e2d\u0e01\u0e02\u0e2d\u0e07\u0e23\u0e30\u0e1a\u0e1a\u0e08\u0e14\u0e08\u0e33\u0e43\u0e1a\u0e2b\u0e19\u0e49\u0e32\n\u0e40\u0e1e\u0e37\u0e48\u0e2d\u0e25\u0e14\u0e20\u0e32\u0e23\u0e30\u0e07\u0e32\u0e19\u0e17\u0e35\u0e48\u0e15\u0e49\u0e2d\u0e07\u0e17\u0e33\u0e14\u0e49\u0e27\u0e22\u0e21\u0e37\u0e2d\u0e02\u0e2d\u0e07\u0e40\u0e08\u0e49\u0e32\u0e2b\u0e19\u0e49\u0e32\u0e17\u0e35\u0e48\u0e17\u0e35\u0e48\u0e15\u0e49\u0e2d\u0e07\u0e43\u0e0a\u0e49\u0e07\u0e32\u0e19\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\u0e01\u0e32\u0e23\u0e25\u0e07\u0e40\u0e27\u0e25\u0e32 \u0e40\u0e0a\u0e48\u0e19 \u0e1c\u0e39\u0e49\u0e08\u0e31\u0e14\u0e01\u0e32\u0e23\u0e1d\u0e48\u0e32\u0e22\u0e01\u0e32\u0e23\u0e1c\u0e25\u0e34\u0e15\u0e43\u0e19\u0e17\u0e38\u0e01\u0e23\u0e30\u0e14\u0e31\u0e1a \u0e15\u0e31\u0e49\u0e07\u0e41\u0e15\u0e48\u0e2b\u0e31\u0e27\u0e2b\u0e19\u0e49\u0e32\u0e07\u0e32\u0e19\u0e44\u0e1b\u0e08\u0e19\u0e16\u0e36\u0e07\u0e01\u0e32\u0e23\u0e15\u0e34\u0e14\u0e15\u0e32\u0e21\u0e1b\u0e23\u0e30\u0e2a\u0e34\u0e17\u0e18\u0e34\u0e20\u0e32\u0e1e\u0e01\u0e32\u0e23\u0e1c\u0e25\u0e34\u0e15\u0e43\u0e19\u0e2a\u0e32\u0e22\u0e01\u0e32\u0e23\u0e1c\u0e25\u0e34\u0e15"],b8,b8),h,a0)
+h=A.em(a2,a2,a2,a2,a2,a2,a2,a2,a2,a2,a2,a2,"assets/projects/werbiimg.png",a2,a2,a2,"https://drive.google.com/file/d/1dZuXn5gWM3L82AATv1ot1dpK6V_vgPlG/view",a2,a,a2,a2,a1,a2,a2,a2,A.a1(["en","To calculate working hours, OT, attandance time from the access data of face-recognition system\nTo reduce manual effort of officers who need to use the attendance data such as production managers at all levels, from leader to monitoring productivity in production","th","\u0e40\u0e1e\u0e37\u0e48\u0e2d\u0e04\u0e33\u0e19\u0e27\u0e13\u0e0a\u0e31\u0e48\u0e27\u0e42\u0e21\u0e07\u0e01\u0e32\u0e23\u0e17\u0e33\u0e07\u0e32\u0e19 \u0e0a\u0e31\u0e48\u0e27\u0e42\u0e21\u0e07 OT \u0e41\u0e25\u0e30\u0e40\u0e27\u0e25\u0e32\u0e40\u0e02\u0e49\u0e32\u0e07\u0e32\u0e19 \u0e08\u0e32\u0e01\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\u0e01\u0e32\u0e23\u0e40\u0e02\u0e49\u0e32\u0e2d\u0e2d\u0e01\u0e02\u0e2d\u0e07\u0e23\u0e30\u0e1a\u0e1a\u0e08\u0e14\u0e08\u0e33\u0e43\u0e1a\u0e2b\u0e19\u0e49\u0e32\n\u0e40\u0e1e\u0e37\u0e48\u0e2d\u0e25\u0e14\u0e20\u0e32\u0e23\u0e30\u0e07\u0e32\u0e19\u0e17\u0e35\u0e48\u0e15\u0e49\u0e2d\u0e07\u0e17\u0e33\u0e14\u0e49\u0e27\u0e22\u0e21\u0e37\u0e2d\u0e02\u0e2d\u0e07\u0e40\u0e08\u0e49\u0e32\u0e2b\u0e19\u0e49\u0e32\u0e17\u0e35\u0e48\u0e17\u0e35\u0e48\u0e15\u0e49\u0e2d\u0e07\u0e43\u0e0a\u0e49\u0e07\u0e32\u0e19\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\u0e01\u0e32\u0e23\u0e25\u0e07\u0e40\u0e27\u0e25\u0e32 \u0e40\u0e0a\u0e48\u0e19 \u0e1c\u0e39\u0e49\u0e08\u0e31\u0e14\u0e01\u0e32\u0e23\u0e1d\u0e48\u0e32\u0e22\u0e01\u0e32\u0e23\u0e1c\u0e25\u0e34\u0e15\u0e43\u0e19\u0e17\u0e38\u0e01\u0e23\u0e30\u0e14\u0e31\u0e1a \u0e15\u0e31\u0e49\u0e07\u0e41\u0e15\u0e48\u0e2b\u0e31\u0e27\u0e2b\u0e19\u0e49\u0e32\u0e07\u0e32\u0e19\u0e44\u0e1b\u0e08\u0e19\u0e16\u0e36\u0e07\u0e01\u0e32\u0e23\u0e15\u0e34\u0e14\u0e15\u0e32\u0e21\u0e1b\u0e23\u0e30\u0e2a\u0e34\u0e17\u0e18\u0e34\u0e20\u0e32\u0e1e\u0e01\u0e32\u0e23\u0e1c\u0e25\u0e34\u0e15\u0e43\u0e19\u0e2a\u0e32\u0e22\u0e01\u0e32\u0e23\u0e1c\u0e25\u0e34\u0e15"],b8,b8),h,a0)
 g=A.a1(["en","Machine Software Management System","th","\u0e23\u0e30\u0e1a\u0e1a\u0e08\u0e31\u0e14\u0e01\u0e32\u0e23\u0e0b\u0e2d\u0e1f\u0e15\u0e4c\u0e41\u0e27\u0e23\u0e4c\u0e40\u0e04\u0e23\u0e37\u0e48\u0e2d\u0e07\u0e08\u0e31\u0e01\u0e23"],b8,b8)
-g=A.em(b4,a2,a8,a2,b0,a2,a2,b1,a2,a7,a2,a2,"assets/projects/msmimg.png",a2,a2,a2,"https://drive.google.com/file/d/1pryzKJovtu3_TbpLK8JzaslUKKDT7pO6/view",a9,a,a2,a2,a2,a2,a2,a2,a2,A.a1(["en","To reduce steps of machine software change request\nAutomatically created tasks to follow up\nTo remind due date of the request via an email which will start notifying before 3 days and continue every day until the change complete\nImprove data management and visualize data","th","\u0e40\u0e1e\u0e37\u0e48\u0e2d\u0e25\u0e14\u0e02\u0e31\u0e49\u0e19\u0e15\u0e2d\u0e19\u0e02\u0e2d\u0e07\u0e01\u0e32\u0e23\u0e23\u0e49\u0e2d\u0e07\u0e02\u0e2d\u0e40\u0e1b\u0e25\u0e35\u0e48\u0e22\u0e19\u0e41\u0e1b\u0e25\u0e07 machine software\n\u0e2a\u0e23\u0e49\u0e32\u0e07 tasks \u0e40\u0e1e\u0e37\u0e48\u0e2d\u0e15\u0e34\u0e14\u0e15\u0e32\u0e21\u0e07\u0e32\u0e19\u0e42\u0e14\u0e22\u0e2d\u0e31\u0e15\u0e42\u0e19\u0e21\u0e31\u0e15\u0e34\n\u0e41\u0e08\u0e49\u0e07\u0e40\u0e15\u0e37\u0e2d\u0e19 due date \u0e1c\u0e48\u0e32\u0e19 email \u0e42\u0e14\u0e22\u0e40\u0e23\u0e34\u0e48\u0e21\u0e41\u0e08\u0e49\u0e07\u0e40\u0e15\u0e37\u0e2d\u0e19\u0e25\u0e48\u0e27\u0e07\u0e2b\u0e19\u0e49\u0e32 3 \u0e27\u0e31\u0e19 \u0e41\u0e25\u0e30\u0e41\u0e08\u0e49\u0e07\u0e17\u0e38\u0e01\u0e27\u0e31\u0e19\u0e08\u0e19\u0e01\u0e27\u0e48\u0e32\u0e01\u0e32\u0e23\u0e40\u0e1b\u0e25\u0e35\u0e48\u0e22\u0e19\u0e41\u0e1b\u0e25\u0e07\u0e08\u0e30\u0e40\u0e2a\u0e23\u0e47\u0e08\u0e2a\u0e21\u0e1a\u0e39\u0e23\u0e13\u0e4c\n\u0e0a\u0e48\u0e27\u0e22\u0e1b\u0e23\u0e31\u0e1a\u0e1b\u0e23\u0e38\u0e07\u0e01\u0e32\u0e23\u0e08\u0e31\u0e14\u0e01\u0e32\u0e23\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\u0e41\u0e25\u0e30\u0e01\u0e32\u0e23\u0e41\u0e2a\u0e14\u0e07\u0e1c\u0e25\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25"],b8,b8),g,a2)
+g=A.em(b4,a2,a8,a2,b0,a2,a2,b1,a2,a7,a2,a2,"assets/projects/msmimg.png",a2,a2,a2,"https://drive.google.com/file/d/1pryzKJovtu3_TbpLK8JzaslUKKDT7pO6/view",a9,a,a2,a2,a2,a2,a2,a2,A.a1(["en","To reduce steps of machine software change request\nAutomatically created tasks to follow up\nTo remind due date of the request via an email which will start notifying before 3 days and continue every day until the change complete\nImprove data management and visualize data","th","\u0e40\u0e1e\u0e37\u0e48\u0e2d\u0e25\u0e14\u0e02\u0e31\u0e49\u0e19\u0e15\u0e2d\u0e19\u0e02\u0e2d\u0e07\u0e01\u0e32\u0e23\u0e23\u0e49\u0e2d\u0e07\u0e02\u0e2d\u0e40\u0e1b\u0e25\u0e35\u0e48\u0e22\u0e19\u0e41\u0e1b\u0e25\u0e07 machine software\n\u0e2a\u0e23\u0e49\u0e32\u0e07 tasks \u0e40\u0e1e\u0e37\u0e48\u0e2d\u0e15\u0e34\u0e14\u0e15\u0e32\u0e21\u0e07\u0e32\u0e19\u0e42\u0e14\u0e22\u0e2d\u0e31\u0e15\u0e42\u0e19\u0e21\u0e31\u0e15\u0e34\n\u0e41\u0e08\u0e49\u0e07\u0e40\u0e15\u0e37\u0e2d\u0e19 due date \u0e1c\u0e48\u0e32\u0e19 email \u0e42\u0e14\u0e22\u0e40\u0e23\u0e34\u0e48\u0e21\u0e41\u0e08\u0e49\u0e07\u0e40\u0e15\u0e37\u0e2d\u0e19\u0e25\u0e48\u0e27\u0e07\u0e2b\u0e19\u0e49\u0e32 3 \u0e27\u0e31\u0e19 \u0e41\u0e25\u0e30\u0e41\u0e08\u0e49\u0e07\u0e17\u0e38\u0e01\u0e27\u0e31\u0e19\u0e08\u0e19\u0e01\u0e27\u0e48\u0e32\u0e01\u0e32\u0e23\u0e40\u0e1b\u0e25\u0e35\u0e48\u0e22\u0e19\u0e41\u0e1b\u0e25\u0e07\u0e08\u0e30\u0e40\u0e2a\u0e23\u0e47\u0e08\u0e2a\u0e21\u0e1a\u0e39\u0e23\u0e13\u0e4c\n\u0e0a\u0e48\u0e27\u0e22\u0e1b\u0e23\u0e31\u0e1a\u0e1b\u0e23\u0e38\u0e07\u0e01\u0e32\u0e23\u0e08\u0e31\u0e14\u0e01\u0e32\u0e23\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\u0e41\u0e25\u0e30\u0e01\u0e32\u0e23\u0e41\u0e2a\u0e14\u0e07\u0e1c\u0e25\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25"],b8,b8),g,a2)
 f=A.a1(["en","Full-stack Application for AGV Indoor Robots","th","\u0e41\u0e2d\u0e1b\u0e1e\u0e25\u0e34\u0e40\u0e04\u0e0a\u0e31\u0e19\u0e41\u0e1a\u0e1a Full-stack \u0e2a\u0e33\u0e2b\u0e23\u0e31\u0e1a\u0e2b\u0e38\u0e48\u0e19\u0e22\u0e19\u0e15\u0e4c AGV \u0e20\u0e32\u0e22\u0e43\u0e19\u0e2d\u0e32\u0e04\u0e32\u0e23"],b8,b8)
-f=A.em(a2,a2,a2,a2,a2,a2,a2,a2,"assets/images/flutter1.png",a2,a2,a2,"assets/projects/agvimg.png",a2,a2,a2,"https://drive.google.com/file/d/1Tj3gAbnDfHUW0w1bm3gkMKFKLmd8zv8F/view",a2,"assets/projects/fibo.png",a2,a2,a2,a2,a2,a2,a2,A.a1(["en","Designed and developed user interface (UI) of AGV indoor robots user interface with Flutter on linux which has functions including auto and manual controls, map rendering, waypoints, configurations which are collected on database, and indoor robot localization on ROS, reducing code complexity, and taking less time to create several platforms","th","\u0e2d\u0e2d\u0e01\u0e41\u0e1a\u0e1a\u0e41\u0e25\u0e30\u0e1e\u0e31\u0e12\u0e19\u0e32\u0e2a\u0e48\u0e27\u0e19\u0e15\u0e34\u0e14\u0e15\u0e48\u0e2d\u0e1c\u0e39\u0e49\u0e43\u0e0a\u0e49\u0e07\u0e32\u0e19 (UI) \u0e2a\u0e33\u0e2b\u0e23\u0e31\u0e1a\u0e2b\u0e38\u0e48\u0e19\u0e22\u0e19\u0e15\u0e4c AGV \u0e20\u0e32\u0e22\u0e43\u0e19\u0e2d\u0e32\u0e04\u0e32\u0e23 \u0e42\u0e14\u0e22\u0e43\u0e0a\u0e49 Flutter \u0e1a\u0e19\u0e23\u0e30\u0e1a\u0e1a Linux \u0e0b\u0e36\u0e48\u0e07\u0e21\u0e35\u0e1f\u0e31\u0e07\u0e01\u0e4c\u0e0a\u0e31\u0e19\u0e01\u0e32\u0e23\u0e04\u0e27\u0e1a\u0e04\u0e38\u0e21\u0e17\u0e31\u0e49\u0e07\u0e41\u0e1a\u0e1a\u0e2d\u0e31\u0e15\u0e42\u0e19\u0e21\u0e31\u0e15\u0e34\u0e41\u0e25\u0e30\u0e41\u0e1a\u0e1a\u0e41\u0e21\u0e19\u0e19\u0e27\u0e25 \u0e01\u0e32\u0e23\u0e41\u0e2a\u0e14\u0e07\u0e41\u0e1c\u0e19\u0e17\u0e35\u0e48 \u0e01\u0e32\u0e23\u0e01\u0e33\u0e2b\u0e19\u0e14\u0e08\u0e38\u0e14\u0e2b\u0e21\u0e32\u0e22 (Waypoints) \u0e01\u0e32\u0e23\u0e15\u0e31\u0e49\u0e07\u0e04\u0e48\u0e32\u0e15\u0e48\u0e32\u0e07 \u0e46 \u0e17\u0e35\u0e48\u0e08\u0e31\u0e14\u0e40\u0e01\u0e47\u0e1a\u0e43\u0e19\u0e10\u0e32\u0e19\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25 \u0e23\u0e27\u0e21\u0e16\u0e36\u0e07\u0e01\u0e32\u0e23\u0e23\u0e30\u0e1a\u0e38\u0e15\u0e33\u0e41\u0e2b\u0e19\u0e48\u0e07\u0e2b\u0e38\u0e48\u0e19\u0e22\u0e19\u0e15\u0e4c\u0e20\u0e32\u0e22\u0e43\u0e19\u0e2d\u0e32\u0e04\u0e32\u0e23\u0e14\u0e49\u0e27\u0e22 ROS \u0e0a\u0e48\u0e27\u0e22\u0e25\u0e14\u0e04\u0e27\u0e32\u0e21\u0e0b\u0e31\u0e1a\u0e0b\u0e49\u0e2d\u0e19\u0e02\u0e2d\u0e07\u0e42\u0e04\u0e49\u0e14 \u0e41\u0e25\u0e30\u0e43\u0e0a\u0e49\u0e40\u0e27\u0e25\u0e32\u0e19\u0e49\u0e2d\u0e22\u0e25\u0e07\u0e43\u0e19\u0e01\u0e32\u0e23\u0e1e\u0e31\u0e12\u0e19\u0e32\u0e43\u0e2b\u0e49\u0e23\u0e2d\u0e07\u0e23\u0e31\u0e1a\u0e2b\u0e25\u0e32\u0e22\u0e41\u0e1e\u0e25\u0e15\u0e1f\u0e2d\u0e23\u0e4c\u0e21"],b8,b8),f,a0)
+f=A.em(a2,a2,a2,a2,a2,a2,a2,a2,"assets/images/flutter1.png",a2,a2,a2,"assets/projects/agvimg.png",a2,a2,a2,"https://drive.google.com/file/d/1Tj3gAbnDfHUW0w1bm3gkMKFKLmd8zv8F/view",a2,"assets/projects/fibo.png",a2,a2,a2,a2,a2,a2,A.a1(["en","Designed and developed user interface (UI) of AGV indoor robots user interface with Flutter on linux which has functions including auto and manual controls, map rendering, waypoints, configurations which are collected on database, and indoor robot localization on ROS, reducing code complexity, and taking less time to create several platforms","th","\u0e2d\u0e2d\u0e01\u0e41\u0e1a\u0e1a\u0e41\u0e25\u0e30\u0e1e\u0e31\u0e12\u0e19\u0e32\u0e2a\u0e48\u0e27\u0e19\u0e15\u0e34\u0e14\u0e15\u0e48\u0e2d\u0e1c\u0e39\u0e49\u0e43\u0e0a\u0e49\u0e07\u0e32\u0e19 (UI) \u0e2a\u0e33\u0e2b\u0e23\u0e31\u0e1a\u0e2b\u0e38\u0e48\u0e19\u0e22\u0e19\u0e15\u0e4c AGV \u0e20\u0e32\u0e22\u0e43\u0e19\u0e2d\u0e32\u0e04\u0e32\u0e23 \u0e42\u0e14\u0e22\u0e43\u0e0a\u0e49 Flutter \u0e1a\u0e19\u0e23\u0e30\u0e1a\u0e1a Linux \u0e0b\u0e36\u0e48\u0e07\u0e21\u0e35\u0e1f\u0e31\u0e07\u0e01\u0e4c\u0e0a\u0e31\u0e19\u0e01\u0e32\u0e23\u0e04\u0e27\u0e1a\u0e04\u0e38\u0e21\u0e17\u0e31\u0e49\u0e07\u0e41\u0e1a\u0e1a\u0e2d\u0e31\u0e15\u0e42\u0e19\u0e21\u0e31\u0e15\u0e34\u0e41\u0e25\u0e30\u0e41\u0e1a\u0e1a\u0e41\u0e21\u0e19\u0e19\u0e27\u0e25 \u0e01\u0e32\u0e23\u0e41\u0e2a\u0e14\u0e07\u0e41\u0e1c\u0e19\u0e17\u0e35\u0e48 \u0e01\u0e32\u0e23\u0e01\u0e33\u0e2b\u0e19\u0e14\u0e08\u0e38\u0e14\u0e2b\u0e21\u0e32\u0e22 (Waypoints) \u0e01\u0e32\u0e23\u0e15\u0e31\u0e49\u0e07\u0e04\u0e48\u0e32\u0e15\u0e48\u0e32\u0e07 \u0e46 \u0e17\u0e35\u0e48\u0e08\u0e31\u0e14\u0e40\u0e01\u0e47\u0e1a\u0e43\u0e19\u0e10\u0e32\u0e19\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25 \u0e23\u0e27\u0e21\u0e16\u0e36\u0e07\u0e01\u0e32\u0e23\u0e23\u0e30\u0e1a\u0e38\u0e15\u0e33\u0e41\u0e2b\u0e19\u0e48\u0e07\u0e2b\u0e38\u0e48\u0e19\u0e22\u0e19\u0e15\u0e4c\u0e20\u0e32\u0e22\u0e43\u0e19\u0e2d\u0e32\u0e04\u0e32\u0e23\u0e14\u0e49\u0e27\u0e22 ROS \u0e0a\u0e48\u0e27\u0e22\u0e25\u0e14\u0e04\u0e27\u0e32\u0e21\u0e0b\u0e31\u0e1a\u0e0b\u0e49\u0e2d\u0e19\u0e02\u0e2d\u0e07\u0e42\u0e04\u0e49\u0e14 \u0e41\u0e25\u0e30\u0e43\u0e0a\u0e49\u0e40\u0e27\u0e25\u0e32\u0e19\u0e49\u0e2d\u0e22\u0e25\u0e07\u0e43\u0e19\u0e01\u0e32\u0e23\u0e1e\u0e31\u0e12\u0e19\u0e32\u0e43\u0e2b\u0e49\u0e23\u0e2d\u0e07\u0e23\u0e31\u0e1a\u0e2b\u0e25\u0e32\u0e22\u0e41\u0e1e\u0e25\u0e15\u0e1f\u0e2d\u0e23\u0e4c\u0e21"],b8,b8),f,a0)
 e=A.a1(["en","Label Inspection","th","\u0e23\u0e30\u0e1a\u0e1a\u0e15\u0e23\u0e27\u0e08\u0e2a\u0e2d\u0e1a\u0e09\u0e25\u0e32\u0e01\u0e2a\u0e34\u0e19\u0e04\u0e49\u0e32 (Label Inspection)"],b8,b8)
-e=A.em(a2,a2,a2,a2,a2,a2,a2,a2,a2,a2,a2,a2,"assets/projects/labelimg.png",a2,a2,a2,"https://drive.google.com/file/d/1rZaHg8lDdm65sZzbQQPWXm0w9n-nsZnv/view",a2,b6,a2,b7,a1,a2,a2,a2,a2,A.a1(["en","Developed Label Inspection project with camera in Python on production lines to automatically detect NG, skewed label, model and serial number, ensuring zero-defect labeling based on the principle of image processing","th","\u0e1e\u0e31\u0e12\u0e19\u0e32\u0e42\u0e04\u0e23\u0e07\u0e01\u0e32\u0e23\u0e15\u0e23\u0e27\u0e08\u0e2a\u0e2d\u0e1a\u0e09\u0e25\u0e32\u0e01\u0e2a\u0e34\u0e19\u0e04\u0e49\u0e32\u0e42\u0e14\u0e22\u0e43\u0e0a\u0e49\u0e01\u0e25\u0e49\u0e2d\u0e07\u0e41\u0e25\u0e30\u0e20\u0e32\u0e29\u0e32 Python \u0e1a\u0e19\u0e2a\u0e32\u0e22\u0e01\u0e32\u0e23\u0e1c\u0e25\u0e34\u0e15 \u0e40\u0e1e\u0e37\u0e48\u0e2d\u0e15\u0e23\u0e27\u0e08\u0e08\u0e31\u0e1a\u0e0a\u0e34\u0e49\u0e19\u0e07\u0e32\u0e19\u0e17\u0e35\u0e48\u0e40\u0e1b\u0e47\u0e19 NG \u0e09\u0e25\u0e32\u0e01\u0e40\u0e2d\u0e35\u0e22\u0e07 \u0e23\u0e38\u0e48\u0e19\u0e2a\u0e34\u0e19\u0e04\u0e49\u0e32 \u0e41\u0e25\u0e30\u0e2b\u0e21\u0e32\u0e22\u0e40\u0e25\u0e02\u0e0b\u0e35\u0e40\u0e23\u0e35\u0e22\u0e25\u0e42\u0e14\u0e22\u0e2d\u0e31\u0e15\u0e42\u0e19\u0e21\u0e31\u0e15\u0e34 \u0e40\u0e1e\u0e37\u0e48\u0e2d\u0e43\u0e2b\u0e49\u0e21\u0e31\u0e48\u0e19\u0e43\u0e08\u0e27\u0e48\u0e32\u0e01\u0e32\u0e23\u0e15\u0e34\u0e14\u0e09\u0e25\u0e32\u0e01\u0e40\u0e1b\u0e47\u0e19\u0e44\u0e1b\u0e15\u0e32\u0e21\u0e21\u0e32\u0e15\u0e23\u0e10\u0e32\u0e19\u0e41\u0e1a\u0e1a Zero-defect \u0e42\u0e14\u0e22\u0e2d\u0e32\u0e28\u0e31\u0e22\u0e2b\u0e25\u0e31\u0e01\u0e01\u0e32\u0e23\u0e02\u0e2d\u0e07\u0e01\u0e32\u0e23\u0e1b\u0e23\u0e30\u0e21\u0e27\u0e25\u0e1c\u0e25\u0e20\u0e32\u0e1e (Image Processing)"],b8,b8),e,a2)
+e=A.em(a2,a2,a2,a2,a2,a2,a2,a2,a2,a2,a2,a2,"assets/projects/labelimg.png",a2,a2,a2,"https://drive.google.com/file/d/1rZaHg8lDdm65sZzbQQPWXm0w9n-nsZnv/view",a2,b6,a2,b7,a1,a2,a2,a2,A.a1(["en","Developed Label Inspection project with camera in Python on production lines to automatically detect NG, skewed label, model and serial number, ensuring zero-defect labeling based on the principle of image processing","th","\u0e1e\u0e31\u0e12\u0e19\u0e32\u0e42\u0e04\u0e23\u0e07\u0e01\u0e32\u0e23\u0e15\u0e23\u0e27\u0e08\u0e2a\u0e2d\u0e1a\u0e09\u0e25\u0e32\u0e01\u0e2a\u0e34\u0e19\u0e04\u0e49\u0e32\u0e42\u0e14\u0e22\u0e43\u0e0a\u0e49\u0e01\u0e25\u0e49\u0e2d\u0e07\u0e41\u0e25\u0e30\u0e20\u0e32\u0e29\u0e32 Python \u0e1a\u0e19\u0e2a\u0e32\u0e22\u0e01\u0e32\u0e23\u0e1c\u0e25\u0e34\u0e15 \u0e40\u0e1e\u0e37\u0e48\u0e2d\u0e15\u0e23\u0e27\u0e08\u0e08\u0e31\u0e1a\u0e0a\u0e34\u0e49\u0e19\u0e07\u0e32\u0e19\u0e17\u0e35\u0e48\u0e40\u0e1b\u0e47\u0e19 NG \u0e09\u0e25\u0e32\u0e01\u0e40\u0e2d\u0e35\u0e22\u0e07 \u0e23\u0e38\u0e48\u0e19\u0e2a\u0e34\u0e19\u0e04\u0e49\u0e32 \u0e41\u0e25\u0e30\u0e2b\u0e21\u0e32\u0e22\u0e40\u0e25\u0e02\u0e0b\u0e35\u0e40\u0e23\u0e35\u0e22\u0e25\u0e42\u0e14\u0e22\u0e2d\u0e31\u0e15\u0e42\u0e19\u0e21\u0e31\u0e15\u0e34 \u0e40\u0e1e\u0e37\u0e48\u0e2d\u0e43\u0e2b\u0e49\u0e21\u0e31\u0e48\u0e19\u0e43\u0e08\u0e27\u0e48\u0e32\u0e01\u0e32\u0e23\u0e15\u0e34\u0e14\u0e09\u0e25\u0e32\u0e01\u0e40\u0e1b\u0e47\u0e19\u0e44\u0e1b\u0e15\u0e32\u0e21\u0e21\u0e32\u0e15\u0e23\u0e10\u0e32\u0e19\u0e41\u0e1a\u0e1a Zero-defect \u0e42\u0e14\u0e22\u0e2d\u0e32\u0e28\u0e31\u0e22\u0e2b\u0e25\u0e31\u0e01\u0e01\u0e32\u0e23\u0e02\u0e2d\u0e07\u0e01\u0e32\u0e23\u0e1b\u0e23\u0e30\u0e21\u0e27\u0e25\u0e1c\u0e25\u0e20\u0e32\u0e1e (Image Processing)"],b8,b8),e,a2)
 d=A.a1(["en","Part picking Status","th","\u0e2a\u0e16\u0e32\u0e19\u0e30\u0e01\u0e32\u0e23\u0e2b\u0e22\u0e34\u0e1a\u0e0a\u0e34\u0e49\u0e19\u0e2a\u0e48\u0e27\u0e19 (Part Picking Status)"],b8,b8)
-d=A.em(a2,a2,a2,a2,a2,a2,a2,a2,a2,a2,a2,a5,"assets/projects/pickimg.png",a2,a2,a6,"https://drive.google.com/file/d/1owm3LZZsBu2nON5RhvYILVokuPQ3uTOK/view",a2,b6,a2,a2,a2,a2,a2,a2,a2,A.a1(["en","Developed Part Picking System with Mitsubishi PLC for the production line to show blinking lights at the position of the picking shelf according to each model with different components which instead of packaged software to save cost for manufacturing plants about 76.3%","th","\u0e1e\u0e31\u0e12\u0e19\u0e32\u0e23\u0e30\u0e1a\u0e1a Part Picking \u0e42\u0e14\u0e22\u0e43\u0e0a\u0e49 Mitsubishi PLC \u0e2a\u0e33\u0e2b\u0e23\u0e31\u0e1a\u0e2a\u0e32\u0e22\u0e01\u0e32\u0e23\u0e1c\u0e25\u0e34\u0e15 \u0e40\u0e1e\u0e37\u0e48\u0e2d\u0e41\u0e2a\u0e14\u0e07\u0e44\u0e1f\u0e01\u0e23\u0e30\u0e1e\u0e23\u0e34\u0e1a\u0e17\u0e35\u0e48\u0e15\u0e33\u0e41\u0e2b\u0e19\u0e48\u0e07\u0e0a\u0e31\u0e49\u0e19\u0e27\u0e32\u0e07\u0e0a\u0e34\u0e49\u0e19\u0e2a\u0e48\u0e27\u0e19\u0e15\u0e32\u0e21\u0e41\u0e15\u0e48\u0e25\u0e30\u0e23\u0e38\u0e48\u0e19\u0e0b\u0e36\u0e48\u0e07\u0e21\u0e35\u0e0a\u0e34\u0e49\u0e19\u0e2a\u0e48\u0e27\u0e19\u0e41\u0e15\u0e01\u0e15\u0e48\u0e32\u0e07\u0e01\u0e31\u0e19 \u0e17\u0e14\u0e41\u0e17\u0e19\u0e01\u0e32\u0e23\u0e43\u0e0a\u0e49\u0e0b\u0e2d\u0e1f\u0e15\u0e4c\u0e41\u0e27\u0e23\u0e4c\u0e2a\u0e33\u0e40\u0e23\u0e47\u0e08\u0e23\u0e39\u0e1b \u0e0a\u0e48\u0e27\u0e22\u0e25\u0e14\u0e15\u0e49\u0e19\u0e17\u0e38\u0e19\u0e43\u0e2b\u0e49\u0e01\u0e31\u0e1a\u0e42\u0e23\u0e07\u0e07\u0e32\u0e19\u0e2d\u0e38\u0e15\u0e2a\u0e32\u0e2b\u0e01\u0e23\u0e23\u0e21\u0e44\u0e14\u0e49\u0e1b\u0e23\u0e30\u0e21\u0e32\u0e13 76.3%"],b8,b8),d,a2)
+d=A.em(a2,a2,a2,a2,a2,a2,a2,a2,a2,a2,a2,a5,"assets/projects/pickimg.png",a2,a2,a6,"https://drive.google.com/file/d/1owm3LZZsBu2nON5RhvYILVokuPQ3uTOK/view",a2,b6,a2,a2,a2,a2,a2,a2,A.a1(["en","Developed Part Picking System with Mitsubishi PLC for the production line to show blinking lights at the position of the picking shelf according to each model with different components which instead of packaged software to save cost for manufacturing plants about 76.3%","th","\u0e1e\u0e31\u0e12\u0e19\u0e32\u0e23\u0e30\u0e1a\u0e1a Part Picking \u0e42\u0e14\u0e22\u0e43\u0e0a\u0e49 Mitsubishi PLC \u0e2a\u0e33\u0e2b\u0e23\u0e31\u0e1a\u0e2a\u0e32\u0e22\u0e01\u0e32\u0e23\u0e1c\u0e25\u0e34\u0e15 \u0e40\u0e1e\u0e37\u0e48\u0e2d\u0e41\u0e2a\u0e14\u0e07\u0e44\u0e1f\u0e01\u0e23\u0e30\u0e1e\u0e23\u0e34\u0e1a\u0e17\u0e35\u0e48\u0e15\u0e33\u0e41\u0e2b\u0e19\u0e48\u0e07\u0e0a\u0e31\u0e49\u0e19\u0e27\u0e32\u0e07\u0e0a\u0e34\u0e49\u0e19\u0e2a\u0e48\u0e27\u0e19\u0e15\u0e32\u0e21\u0e41\u0e15\u0e48\u0e25\u0e30\u0e23\u0e38\u0e48\u0e19\u0e0b\u0e36\u0e48\u0e07\u0e21\u0e35\u0e0a\u0e34\u0e49\u0e19\u0e2a\u0e48\u0e27\u0e19\u0e41\u0e15\u0e01\u0e15\u0e48\u0e32\u0e07\u0e01\u0e31\u0e19 \u0e17\u0e14\u0e41\u0e17\u0e19\u0e01\u0e32\u0e23\u0e43\u0e0a\u0e49\u0e0b\u0e2d\u0e1f\u0e15\u0e4c\u0e41\u0e27\u0e23\u0e4c\u0e2a\u0e33\u0e40\u0e23\u0e47\u0e08\u0e23\u0e39\u0e1b \u0e0a\u0e48\u0e27\u0e22\u0e25\u0e14\u0e15\u0e49\u0e19\u0e17\u0e38\u0e19\u0e43\u0e2b\u0e49\u0e01\u0e31\u0e1a\u0e42\u0e23\u0e07\u0e07\u0e32\u0e19\u0e2d\u0e38\u0e15\u0e2a\u0e32\u0e2b\u0e01\u0e23\u0e23\u0e21\u0e44\u0e14\u0e49\u0e1b\u0e23\u0e30\u0e21\u0e32\u0e13 76.3%"],b8,b8),d,a2)
 c=A.a1(["en","Smart Access","th","\u0e23\u0e30\u0e1a\u0e1a\u0e04\u0e27\u0e1a\u0e04\u0e38\u0e21\u0e01\u0e32\u0e23\u0e40\u0e02\u0e49\u0e32\u0e2d\u0e2d\u0e01\u0e2d\u0e31\u0e08\u0e09\u0e23\u0e34\u0e22\u0e30"],b8,b8)
-c=A.em(a2,a4,a2,a2,a2,a2,a2,a2,a2,a2,a2,a2,"assets/projects/smartaccess1.jpg",a2,a2,a2,a3,a2,a,"assets/images/mqtt.png",b7,a1,a2,a2,b5,a2,A.a1(["en","Contactless access control using face recognition and proximity-based authentication.\nUnlock doors automatically when authorized users approach\u2014no key card, no touch.","th","\u0e23\u0e30\u0e1a\u0e1a\u0e04\u0e27\u0e1a\u0e04\u0e38\u0e21\u0e01\u0e32\u0e23\u0e40\u0e02\u0e49\u0e32\u0e2d\u0e2d\u0e01\u0e41\u0e1a\u0e1a contactless \u0e42\u0e14\u0e22\u0e43\u0e0a\u0e49 face recognition \u0e41\u0e25\u0e30 proximity-based authentication\n\u0e1b\u0e25\u0e14\u0e25\u0e47\u0e2d\u0e01\u0e1b\u0e23\u0e30\u0e15\u0e39\u0e2d\u0e31\u0e15\u0e42\u0e19\u0e21\u0e31\u0e15\u0e34\u0e40\u0e21\u0e37\u0e48\u0e2d\u0e1c\u0e39\u0e49\u0e17\u0e35\u0e48\u0e44\u0e14\u0e49\u0e23\u0e31\u0e1a\u0e2d\u0e19\u0e38\u0e0d\u0e32\u0e15\u0e40\u0e02\u0e49\u0e32\u0e43\u0e01\u0e25\u0e49 \u0e42\u0e14\u0e22\u0e44\u0e21\u0e48\u0e15\u0e49\u0e2d\u0e07\u0e43\u0e0a\u0e49 key card \u0e41\u0e25\u0e30\u0e44\u0e21\u0e48\u0e15\u0e49\u0e2d\u0e07\u0e2a\u0e31\u0e21\u0e1c\u0e31\u0e2a"],b8,b8),c,a0)
+c=A.em(a2,a4,a2,a2,a2,a2,a2,a2,a2,a2,a2,a2,"assets/projects/smartaccess1.jpg",a2,a2,a2,a3,a2,a,"assets/images/mqtt.png",b7,a1,a2,b5,a2,A.a1(["en","Contactless access control using face recognition and proximity-based authentication.\nUnlock doors automatically when authorized users approach\u2014no key card, no touch.","th","\u0e23\u0e30\u0e1a\u0e1a\u0e04\u0e27\u0e1a\u0e04\u0e38\u0e21\u0e01\u0e32\u0e23\u0e40\u0e02\u0e49\u0e32\u0e2d\u0e2d\u0e01\u0e41\u0e1a\u0e1a contactless \u0e42\u0e14\u0e22\u0e43\u0e0a\u0e49 face recognition \u0e41\u0e25\u0e30 proximity-based authentication\n\u0e1b\u0e25\u0e14\u0e25\u0e47\u0e2d\u0e01\u0e1b\u0e23\u0e30\u0e15\u0e39\u0e2d\u0e31\u0e15\u0e42\u0e19\u0e21\u0e31\u0e15\u0e34\u0e40\u0e21\u0e37\u0e48\u0e2d\u0e1c\u0e39\u0e49\u0e17\u0e35\u0e48\u0e44\u0e14\u0e49\u0e23\u0e31\u0e1a\u0e2d\u0e19\u0e38\u0e0d\u0e32\u0e15\u0e40\u0e02\u0e49\u0e32\u0e43\u0e01\u0e25\u0e49 \u0e42\u0e14\u0e22\u0e44\u0e21\u0e48\u0e15\u0e49\u0e2d\u0e07\u0e43\u0e0a\u0e49 key card \u0e41\u0e25\u0e30\u0e44\u0e21\u0e48\u0e15\u0e49\u0e2d\u0e07\u0e2a\u0e31\u0e21\u0e1c\u0e31\u0e2a"],b8,b8),c,a0)
 b=A.a1(["en","Accident Alert System with GPS Project","th","\u0e23\u0e30\u0e1a\u0e1a\u0e41\u0e08\u0e49\u0e07\u0e40\u0e15\u0e37\u0e2d\u0e19\u0e2d\u0e38\u0e1a\u0e31\u0e15\u0e34\u0e40\u0e2b\u0e15\u0e38\u0e01\u0e31\u0e1a\u0e1e\u0e34\u0e01\u0e31\u0e14\u0e15\u0e33\u0e41\u0e2b\u0e19\u0e48\u0e07\u0e1c\u0e48\u0e32\u0e19\u0e41\u0e2d\u0e1e\u0e1e\u0e25\u0e34\u0e40\u0e04\u0e0a\u0e31\u0e48\u0e19"],b8,b8)
-return A.b([b9,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,A.em(a2,a4,a2,a2,a2,"assets/images/c.png",a2,a2,a2,a2,a2,a2,"assets/projects/accimg.png",a2,a2,a2,"https://drive.google.com/file/d/1Nd9kUBnpF2flGrXAQT5Y8KtEI2_pGzxy/view",a2,"assets/projects/mut.png",a2,a2,a2,a2,a2,a2,a2,A.a1(["en","This system is based on accelerometer, microcontroller, and IoT...","th","\u0e23\u0e30\u0e1a\u0e1a\u0e41\u0e08\u0e49\u0e07\u0e40\u0e15\u0e37\u0e2d\u0e19\u0e2d\u0e38\u0e1a\u0e31\u0e15\u0e34\u0e40\u0e2b\u0e15\u0e38\u0e42\u0e14\u0e22\u0e43\u0e0a\u0e49 accelerometer, microcontroller \u0e41\u0e25\u0e30 IoT \u0e2a\u0e33\u0e2b\u0e23\u0e31\u0e1a\u0e08\u0e31\u0e01\u0e23\u0e22\u0e32\u0e19\u0e2b\u0e23\u0e37\u0e2d\u0e21\u0e2d\u0e40\u0e15\u0e2d\u0e23\u0e4c\u0e44\u0e0b\u0e04\u0e4c \u0e15\u0e23\u0e27\u0e08\u0e08\u0e31\u0e1a\u0e2d\u0e38\u0e1a\u0e31\u0e15\u0e34\u0e40\u0e2b\u0e15\u0e38\u0e41\u0e25\u0e30\u0e41\u0e08\u0e49\u0e07\u0e40\u0e15\u0e37\u0e2d\u0e19\u0e1c\u0e48\u0e32\u0e19 Line Application \u0e1e\u0e23\u0e49\u0e2d\u0e21\u0e2a\u0e48\u0e07\u0e15\u0e33\u0e41\u0e2b\u0e19\u0e48\u0e07\u0e1b\u0e31\u0e08\u0e08\u0e38\u0e1a\u0e31\u0e19"],b8,b8),b,a2)],A.av("B<JO>"))})})();(function nativeSupport(){!function(){var s=function(a){var m={}
+return A.b([b9,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,A.em(a2,a4,a2,a2,a2,"assets/images/c.png",a2,a2,a2,a2,a2,a2,"assets/projects/accimg.png",a2,a2,a2,"https://drive.google.com/file/d/1Nd9kUBnpF2flGrXAQT5Y8KtEI2_pGzxy/view",a2,"assets/projects/mut.png",a2,a2,a2,a2,a2,a2,A.a1(["en","This system is based on accelerometer, microcontroller, and IoT...","th","\u0e23\u0e30\u0e1a\u0e1a\u0e41\u0e08\u0e49\u0e07\u0e40\u0e15\u0e37\u0e2d\u0e19\u0e2d\u0e38\u0e1a\u0e31\u0e15\u0e34\u0e40\u0e2b\u0e15\u0e38\u0e42\u0e14\u0e22\u0e43\u0e0a\u0e49 accelerometer, microcontroller \u0e41\u0e25\u0e30 IoT \u0e2a\u0e33\u0e2b\u0e23\u0e31\u0e1a\u0e08\u0e31\u0e01\u0e23\u0e22\u0e32\u0e19\u0e2b\u0e23\u0e37\u0e2d\u0e21\u0e2d\u0e40\u0e15\u0e2d\u0e23\u0e4c\u0e44\u0e0b\u0e04\u0e4c \u0e15\u0e23\u0e27\u0e08\u0e08\u0e31\u0e1a\u0e2d\u0e38\u0e1a\u0e31\u0e15\u0e34\u0e40\u0e2b\u0e15\u0e38\u0e41\u0e25\u0e30\u0e41\u0e08\u0e49\u0e07\u0e40\u0e15\u0e37\u0e2d\u0e19\u0e1c\u0e48\u0e32\u0e19 Line Application \u0e1e\u0e23\u0e49\u0e2d\u0e21\u0e2a\u0e48\u0e07\u0e15\u0e33\u0e41\u0e2b\u0e19\u0e48\u0e07\u0e1b\u0e31\u0e08\u0e08\u0e38\u0e1a\u0e31\u0e19"],b8,b8),b,a2)],A.av("B<JO>"))})})();(function nativeSupport(){!function(){var s=function(a){var m={}
 m[a]=1
 return Object.keys(hunkHelpers.convertToFastObject(m))[0]}
 v.getIsolateTag=function(a){return s("___dart_"+a+v.isolateTag)}
