@@ -1,38 +1,35 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <base href="/">
-
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="description" content="Core System Axis">
-
-  <!-- iOS meta -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="CORYX">
-
-  <!-- ✅ ใช้ viewport แบบปลอดภัย (เหมือน Flutter default) -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Icons -->
-  <link rel="icon" type="image/png" href="icons/logo3.png">
-  <link rel="apple-touch-icon" href="icons/logo6.png">
-
-  <title>CORYX</title>
-  <link rel="manifest" href="manifest.json">
-
-  <!-- ✅ CSS ขั้นต่ำ ไม่ไปยุ่ง Safari -->
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      background-color: #0F172A; /* สีเดียวกับ Flutter */
+{
+  "name": "CORYX",
+  "short_name": "CORYX",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0E1320",
+  "theme_color": "#0E1320",
+  "icons": [
+    {
+      "src": "icons/logo6.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/logo2_3.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/logo2.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/logo3.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/logo63.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
-  </style>
-</head>
-
-<body>
-  <script src="flutter_bootstrap.js" async></script>
-</body>
-</html>
+  ]
+}
